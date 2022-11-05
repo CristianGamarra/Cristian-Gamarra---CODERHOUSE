@@ -29,7 +29,9 @@ header{
 
 /*(HEADER) LOGO*/
 
-.logo img{ /*Margin y ancho al logo*/
+/*Ancho y animacion al logo*/
+
+.logo img{ 
     width: 5em;
     transition: all 300ms ease;
 }
@@ -42,7 +44,7 @@ header{
 /*(HEADER) NAVBAR*/
 
 header > nav ul li {
-    display: inline-block; /*Se aplico inline block para poder manipular el nav*/
+    display: inline-block; /*Se aplico inline block al navbar*/
     margin: 1em;
 }
 
@@ -65,7 +67,7 @@ main{
     overflow: hidden;
 }
 
-.banner{ /*Se llama al .banner desde el div que contiene al titulo y parrafo para poder situar el texto*/
+.banner{
     background-image: url(../Img/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -73,14 +75,16 @@ main{
     height: 50em;
 }
 
-.banner{ /*Se utilizo para posicionar el banner correctamente*/
+.banner{ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.bannerTitulo, .bannerParrafo{ /*Estilo de titulo y parrafo*/
+/*Estilo de titulo y parrafo*/
+
+.bannerTitulo, .bannerParrafo{ 
     font-family: 'Arimo', sans-serif;
     color: #fffffff6;
     margin: 0.3em;
@@ -95,7 +99,7 @@ main{
     font-size: 2em;
 }
 
-/*-------------------------------------------*/
+/*----------------------------------------------------*/
 
 /*INDEX*/
 
@@ -130,7 +134,7 @@ main{
     color: #000000;
 }
 
-/*-------------------------------------------*/
+/*----------------------------------------------------*/
 
 .articulo{ /*Contenedor articulo*/
     height: 20em;
@@ -163,9 +167,9 @@ main{
     color: #000000;
 }
 
-/*-------------------------------------------*/
+/*----------------------------------------------------*/
 
-/*INDEX GRID / MEDIA QUERIES*/
+/*INDEX GRID*/
 
 #index{
     display: grid;
@@ -189,6 +193,7 @@ main{
     grid-area:footer;
 }
 
+/*INDEX MEDIA QUERIES*/
 
 @media screen and (min-width:320px) and (max-width:479px){
     #index{
@@ -387,7 +392,7 @@ footer{
     padding: 2em;
 }
 
-.logoFooter{
+.logoFooter{ /*Ancho del logo*/
     width: 8em;
 }
 
@@ -409,26 +414,7 @@ footer{
     margin-bottom: 1em;
 }
 
-/*(FOOTER) INFORMACION*/
-
-.informacion h4{ /*Estilo al titulo de informacion*/
-    font-size: 0.9em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 0.5em;
-    color: #000000;
-}
-
-.informacion ul li {/*Estilo a la lista informacion*/
-    font-size: 0.9em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #000000;
-}
-
-.informacion li{ /*Margin bottom entre cada lista*/
-    margin-bottom: 1em;
-}
-
-/*(FOOTER) REDES (Tuve que colocar redes fuera del section que aplicaba el display flex column en los enlaces y formulario, creo que quedo mucho mejor)*/
+/*(FOOTER) REDES*/
 
 .redes{ /*Se utilizo para posicionar los iconos de las redes sociales*/
     display: flex;
@@ -453,6 +439,25 @@ footer{
     color: #000000;
 }
 
+/*(FOOTER) INFORMACION*/
+
+.informacion h4{ /*Estilo al titulo de informacion*/
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0.5em;
+    color: #000000;
+}
+
+.informacion ul li {/*Estilo a la lista informacion*/
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+}
+
+.informacion li{ /*Margin bottom entre cada lista*/
+    margin-bottom: 1em;
+}
+
 /*(FOOTER) COPYRIGHT*/
 
 .copyright{ /*Se utilizo para posicionar el texto*/
@@ -466,13 +471,17 @@ footer{
 
 /*NOSOTROS*/
 
-.bannerNosotros{
+/*Flexbox y altura al banner*/
+
+.bannerNosotros{  
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 600px;
 }
+
+/*Banner propiedades*/
 
 .bannerNosotros{
     background-image: url(../img/banner2.jpg);
@@ -481,6 +490,8 @@ footer{
     background-attachment: fixed;
     background-position-y: -200px;
 }
+
+/*Parrafo dentro del banner*/
 
 .parrafoNosotros{
     font-size: 2em;
@@ -859,6 +870,8 @@ footer{
     }
 }
 
+/*----------------------------------------------------*/
+
 /*SERVICIOS*/
 
 .serviciosTitulo{ /*Se utilizo para posicionar al titulo*/
@@ -876,21 +889,19 @@ footer{
     color:#ffffff;
     margin: 2em;
 }
-/*--------------------------------------*/
 
-.catImg{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+/*----------------------------------------------------*/
 
-/*--------------------------------------*/
-.contenedorCards{ /*Se utilizo para separar el contenido del footer*/
+
+/*Se utilizo para separar el contenido del footer*/
+
+.contenedorCards{ 
     padding: 3.3em;
 }
 
-.card-1{           /*Posicionamiento de los items*/
+/*Posicionamiento de los items*/
+
+.card-1{           
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -898,14 +909,16 @@ footer{
     margin: 5em;
 }
 
-.card-1 >img{ /*Se ajusto altura (con grids esto se va a ir)*/
+.card-1 >img{
     width: 50em;
     box-shadow: 0px 5px 6px #000000;
 }
 
-/*---------------------------------*/
+/*----------------------------------------------------*/
 
-.card-2{ /*Posicionamiento de la imagen*/
+/*Posicionamiento de la imagen*/
+
+.card-2{ 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -913,14 +926,16 @@ footer{
     margin: 5em;
 }
 
-.card-2 >img{ /*Se ajusto altura (con grids esto se va a ir)*/
+.card-2 >img{
     height: 30em;
-    box-shadow: 0px 5px 6px
+    box-shadow: 0px 5px 6px;
 }
 
-/*---------------------------------*/
+/*----------------------------------------------------*/
 
-.card-3{ /*Posicionamiento de la imagen*/
+/*Posicionamiento de la imagen*/
+
+.card-3{ 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -928,14 +943,16 @@ footer{
     margin: 5em;
 }
 
-.card-3 >img{ /*Se ajusto altura (con grids esto se va a ir)*/
+.card-3 >img{
     height: 25em;
-    box-shadow: 0px 5px 6px
+    box-shadow: 0px 5px 6px;
 }
 
-/*---------------------------------*/
+/*----------------------------------------------------*/
 
-.card-4{ /*Posicionamiento de la imagen*/
+/*Posicionamiento de la imagen*/
+
+.card-4{ 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -943,12 +960,12 @@ footer{
     margin: 5em;
 }
 
-.card-4 >img{ /*Se ajusto altura (con grids esto se va a ir)*/
+.card-4 >img{ 
     height: 20em;
-    box-shadow: 0px 5px 6px
+    box-shadow: 0px 5px 6px;
 }
 
-/*---------------------------------*/
+/*----------------------------------------------------*/
 
 /* CARDS PARRAFOS ↓*/
 
@@ -958,7 +975,9 @@ footer{
     margin: 2em;
 }
 
-.card-1 > p{ /*Estilo al parrafo*/
+/*Estilos al parrafo*/
+
+.card-1 > p{ 
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -972,15 +991,19 @@ footer{
     background:linear-gradient(135deg, #00e8f2 0%,#95ea00 100%);
 }
 
-/*---------------------------------*/
+/*----------------------------------------------------*/
 
-.card-2 > p{ /*Altura padding margin al parrafo*/
+/*Altura padding margin al parrafo*/
+
+.card-2 > p{ 
     width: 18em;
     padding: 2em;
     margin: 2em;
 }
 
-.card-2 > p{ /*Estilo al parrafo*/
+/*Estilo al parrafo*/
+
+.card-2 > p{ 
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -993,15 +1016,20 @@ footer{
     border-radius: 10px;
     background:linear-gradient(135deg, #d177f2 0%,#fcc989 100%);
 }
-/*---------------------------------*/
 
-.card-3 > p{ /*Altura padding margin al parrafo*/
+/*----------------------------------------------------*/
+
+/*Altura padding margin al parrafo*/
+
+.card-3 > p{ 
     width: 24em;
     padding: 1em;
     margin: 2em;
 }
 
-.card-3 > p{ /*Estilo al parrafo*/
+/*Estilo al parrafo*/
+
+.card-3 > p{
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -1015,15 +1043,19 @@ footer{
     background:linear-gradient(135deg, #ffe53b 0%,#ff2525 100%);
 }
 
-/*---------------------------------*/
+/*----------------------------------------------------*/
 
-.card-4 > p{ /*Altura padding margin al parrafo*/
+/*Altura padding margin al parrafo*/
+
+.card-4 > p{ 
     width: 49em;
     padding: 2em;
     margin: 2em;
 }
 
-.card-4 > p{ /*Estilo al parrafo*/
+/*Estilo al parrafo*/
+
+.card-4 > p{ 
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -1036,6 +1068,8 @@ footer{
     border-radius: 10px;
     background:linear-gradient(135deg, #ffffff 0%,#6184ff 100%);
 }
+
+/*----------------------------------------------------*/
 
 /*CONTACTO*/
 
@@ -1070,11 +1104,13 @@ footer{
     align-items: center;
 }
 
-.contenedorContacto{ /*Se agrego padding para separar el footer del main*/
+.contenedorContacto{
     margin-bottom: 8em;
 }
 
-.contenedorContacto form{ /*Estilo a los cajones del formulario*/
+/*Estilo a los cajones del formulario*/
+
+.contenedorContacto form{ 
     width: 500px;         /*Lo pase a pixeles porque en em se distribuye de otra manera la caja padre*/
     padding: 1em;
 
@@ -1083,40 +1119,52 @@ footer{
     background:linear-gradient(135deg, #e9eced 0%,#fffcfc 100%);
 }
 
-.contenedorContacto form{ /*Estilo a todo el texto del formulario*/
+/*Estilo a todo el texto del formulario*/
+
+.contenedorContacto form{ 
     font-size: 1.2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     color: #000000;
 }
 
-.contenedorContacto div{ /*Posicionamiento entre los divs*/
+/*Posicionamiento entre los divs*/
+
+.contenedorContacto div{ 
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
 }
 
-.contenedorContacto label{ /*Separacion inferior entre label e input*/
+.contenedorContacto label{
     margin-bottom: 0.5em;
 }
 
-.contenedorContacto input{ /*Alto y ancho de las cajas de texto*/
+/*Alto y ancho de las cajas de texto*/
+
+.contenedorContacto input{ 
     width: 450px;
     height: 40px;
 }
 
-.contenedorContacto input{ /*Se modificaron los valores de las cajas de texto */
+/*Se modificaron los valores de las cajas de texto */
+
+.contenedorContacto input{ 
     font-size: 1.0em;
     border-radius: 0.3em;
     outline: none;
     border: 1px solid;
 }
 
-.contenedorContacto textarea{ /*Alto y ancho de la caja de comentario*/
+/*Alto y ancho de la caja de comentario*/
+
+.contenedorContacto textarea{ 
     width: 450px;
     height: 90px;
 }
 
-.contenedorContacto textarea{ /*Se modificaron los valores de la caja comentario*/
+/*Se modificaron los valores de la caja comentario*/
+
+.contenedorContacto textarea{ 
     font-size: 1.2em;
     border-radius: 0.3em;
     resize: none;
@@ -1124,7 +1172,9 @@ footer{
     border: 1px solid;
 }
 
-.contenedorContacto button{ /*Ajustes de posicionamiento y visual del boton*/
+/*Estilos al boton*/
+
+.contenedorContacto button{
     font-size  : 0.8em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
