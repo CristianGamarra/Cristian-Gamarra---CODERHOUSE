@@ -825,7 +825,7 @@ footer{
     align-items: center;
 }
 
-.serviciosTitulo > h1{ /*Se utilizo para dar estetica al titulo*/
+.serviciosTitulo > h2{ /*Se utilizo para dar estetica al titulo*/
     font-size: 4em ;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
