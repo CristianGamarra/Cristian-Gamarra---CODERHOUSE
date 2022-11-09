@@ -525,38 +525,9 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 5em;
-}
-
-.cardImagenDerecha{ /*Ancho y box shadow de imagen*/
-    width: 600px;
-    margin: 5em;
-    box-shadow: 8px 8px 8px;
 }
 
 /*----------------------------------------------------*/
-
-/*Seccion 1 PARRAFO*/
-
-/*Ancho padding y margin para el parrafo*/
-
-.cardDerecha > p{ 
-    background-color: #ffffff;
-    width:500px;
-    border: 1px solid #000000;
-    box-shadow: 10px 10px;
-    padding: 2em;
-    margin: 5em;
-}
-
-/*Estilo de texto y box*/
-
-.cardDerecha > p{
-    font-size: 1em;
-    font-family: 'Montserrat', sans-serif;
-    color: #000000;
-    text-align: center;
-}
 
 /*----------------------------------------------------*/
 
@@ -568,32 +539,6 @@ footer{
     justify-content: center;
     align-items: center;
     margin-bottom: 8em;
-}
-
-.cardImagenIzquierda{ /*Altura y ancho para la imagen*/
-    width: 600px;
-    margin: 5em;
-    box-shadow: -8px 8px 8px;
-}
-
-/*----------------------------------------------------*/
-
-/*Seccion 2 PARRAFO*/
-
-.cardIzquierda > P{ /*Ancho padding y margin para el parrafo*/
-    background-color: #ffffff;
-    width: 500px;
-    border: 1px solid #000000;
-    box-shadow: -10px 10px;
-    margin: 5em;
-    padding: 2em;
-}
-
-.cardIzquierda > p{
-    font-size: 1em;
-    font-family: 'Montserrat', sans-serif;
-    color: #000000;
-    text-align: center;
 }
 
 /*----------------------------------------------------*/
