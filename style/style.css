@@ -62,7 +62,6 @@ nav ul li a:hover{
 /*(HEADER) BANNER*/
 
 main{
-    padding: 1px;
     background-color: #DFD3C3;
     overflow: hidden;
 }
@@ -468,38 +467,8 @@ footer{
 
 /*----------------------------------------------------*/
 
-/*NOSOTROS*/
+/*Sobre nosotros*/
 
-/*Flexbox y altura al banner*/
-
-.bannerNosotros{  
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-}
-
-/*Banner propiedades*/
-
-.bannerNosotros{
-    background-image: url(../img/banner2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-y: -200px;
-}
-
-/*Parrafo dentro del banner*/
-
-.parrafoNosotros{
-    font-size: 2em;
-    font-family: 'Arimo', sans-serif;
-    color: #ffffff;
-    text-shadow: 10px 10px 10px #000000;
-}
-
-/*----------------------------------------------------*/
 
 .nosotrosTitulo{ /*Se utilizo para posicionar al titulo*/
     display: flex;
@@ -518,28 +487,14 @@ footer{
 
 /*----------------------------------------------------*/
 
-/*Seccion 1 IMAGEN*/
-
-.cardDerecha{ /*Se utilizo para posicionar la imagen*/
+.cards{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
-/*----------------------------------------------------*/
-
-/*----------------------------------------------------*/
-
-/*Seccion 2 IMAGEN*/
-
-.cardIzquierda{ /*Se utilizo para posicionar la imagen*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8em;
-}
 
 /*----------------------------------------------------*/
 
