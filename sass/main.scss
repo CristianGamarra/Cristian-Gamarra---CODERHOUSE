@@ -1,0 +1,132 @@
+@import 'reset';
+@import 'bootstrapIcons';
+@import 'googleFonts';
+@import 'colores';
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: $colorHeader;
+    height: 9em;
+
+    .logo img {
+        width: 5em;
+        transition: all 300ms ease;
+
+        :hover {
+            transform: scale(1.4);
+            cursor: pointer;
+        }
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 1em;
+
+        a {
+            font-size: 1.2em;
+            font-family: 'Montserrat', sans-serif;
+
+            :hover {
+                color: #ffffff;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+main {
+    background-color: $colorMain;
+    overflow: hidden;
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50em;
+
+        background: {
+            image: url(../img/banner.jpg);
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+
+        .bannerTitulo,
+        .bannerParrafo {
+            font-family: 'Arimo', sans-serif;
+            color: #ffffff;
+            margin: 0.3em;
+            text-shadow: 2px 2px 6px #000000;
+        }
+
+        .bannerTitulo {
+            font-size: 4em;
+        }
+
+        .bannerParrafo {
+            font-size: 2em;
+        }
+    }
+
+    .contenedor {
+        height: 20em;
+        width: auto;
+        background-color: $colorMain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .contenedorTitulo,
+        .contenedorParrafo {
+            text-align: center;
+            width: 50em;
+        }
+
+        .contenedorTitulo {
+            font-size: 2em;
+            font-family: 'Roboto Condensed', sans-serif;
+            color: #000000;
+            margin: 0.3em;
+        }
+
+        .contenedorParrafo {
+            font-size: 1em;
+            font-family: 'Montserrat', sans-serif;
+            color: #000000;
+        }
+    }
+
+    .articulo {
+        height: 20em;
+        width: auto;
+        background-color: $colorMain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .articuloTitulo,
+        .articuloParrafo {
+            text-align: center;
+            width: 50em;
+        }
+
+        .articuloTitulo {
+            font-size: 2em;
+            font-family: 'Roboto Condensed', sans-serif;
+            color: #000000;
+            margin: 0.3em;
+        }
+
+        .articuloParrafo {
+            font-size: 1em;
+            font-family: 'Montserrat', sans-serif;
+            color: #000000;
+        }
+    }
+}
