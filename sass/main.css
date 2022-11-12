@@ -27,6 +27,68 @@ header nav ul li a :hover {
   cursor: pointer;
 }
 
+footer {
+  background-color: #7D6E83;
+}
+footer .pieDePagina {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2em;
+}
+footer .pieDePagina .logoFooter {
+  width: 8em;
+}
+footer .pieDePagina .links h4 {
+  font-size: 0.9em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 0.5em;
+}
+footer .pieDePagina .links ul li a {
+  font-size: 0.9em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+}
+footer .pieDePagina .links li {
+  margin-bottom: 1em;
+}
+footer .pieDePagina .redes {
+  display: flex;
+  flex-direction: column;
+}
+footer .pieDePagina .redes h4 {
+  font-size: 0.9em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 0.5em;
+  color: #000000;
+}
+footer .pieDePagina .redes a {
+  font-size: 0.9em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+  margin-bottom: 1em;
+}
+footer .pieDePagina .informacion h4 {
+  font-size: 0.9em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 0.5em;
+  color: #000000;
+}
+footer .pieDePagina .informacion ul li {
+  font-size: 0.9em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+}
+footer .pieDePagina .informacion li {
+  margin-bottom: 1em;
+}
+footer .copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   background-color: #DFD3C3;
   overflow: hidden;
@@ -105,24 +167,23 @@ main .articulo .articuloParrafo {
   font-family: "Montserrat", sans-serif;
   color: #000000;
 }
-
-#index {
+main #index {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, autofill);
   grid-template-areas: "header header header" "main   main   main" "footer footer footer";
 }
-#index .header {
+main #index .header {
   grid-area: herader;
 }
-#index .mainIndex {
+main #index .mainIndex {
   grid-area: main;
 }
-#index .footer {
+main #index .footer {
   grid-area: footer;
 }
 
-@media screee and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   #index {
     display: grid;
     grid-template-columns: 1fr;
@@ -258,68 +319,6 @@ main .articulo .articuloParrafo {
     display: none;
   }
 }
-footer {
-  background-color: #7D6E83;
-}
-footer .pieDePagina {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 2em;
-}
-footer .pieDePagina .logoFooter {
-  width: 8em;
-}
-footer .pieDePagina .links h4 {
-  font-size: 0.9em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-bottom: 0.5em;
-}
-footer .pieDePagina .links ul li a {
-  font-size: 0.9em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #000000;
-}
-footer .pieDePagina .links li {
-  margin-bottom: 1em;
-}
-footer .pieDePagina .redes {
-  display: flex;
-  flex-direction: column;
-}
-footer .pieDePagina .redes h4 {
-  font-size: 0.9em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-bottom: 0.5em;
-  color: #000000;
-}
-footer .pieDePagina .redes a {
-  font-size: 0.9em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #000000;
-  margin-bottom: 1em;
-}
-footer .pieDePagina .informacion h4 {
-  font-size: 0.9em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-bottom: 0.5em;
-  color: #000000;
-}
-footer .pieDePagina .informacion ul li {
-  font-size: 0.9em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #000000;
-}
-footer .pieDePagina .informacion li {
-  margin-bottom: 1em;
-}
-footer .copyright {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 main .nosotrosTitulo {
   display: flex;
   justify-content: center;
@@ -578,4 +577,26 @@ main .contenedorContacto textarea {
   resize: none;
   outline: none;
   border: 1px solid;
+}
+main .contenedorContacto button {
+  font-size: 0.8em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main .contenedorContacto button {
+  display: block;
+  width: 450px;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 10px;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8 51%, #757F9A 100%);
+  transition: 0.5s;
+}
+main .contenedorContacto button :hover {
+  background-position: right center;
+  color: #ffffff;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

@@ -32,7 +32,86 @@ header { //HEADER
     }
 }
 
+footer { //FOOTER
+    background-color: #7D6E83;
+
+    .pieDePagina {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2em;
+
+        .logoFooter {
+            width: 8em;
+        }
+
+        .links {
+            h4 {
+                font-size: 0.9em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin-bottom: 0.5em;
+            }
+
+            ul li a {
+                font-size: 0.9em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #000000;
+            }
+
+            li {
+                margin-bottom: 1em;
+            }
+        }
+
+        .redes {
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+                font-size: 0.9em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin-bottom: 0.5em;
+                color: #000000;
+            }
+
+            a {
+                font-size: 0.9em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #000000;
+                margin-bottom: 1em;
+            }
+        }
+
+        .informacion {
+            h4 {
+                font-size: 0.9em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin-bottom: 0.5em;
+                color: #000000;
+            }
+
+            ul li {
+                font-size: 0.9em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #000000;
+            }
+
+            li {
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 main { //INDEX
+
     background-color: #DFD3C3;
     overflow: hidden;
 
@@ -124,31 +203,33 @@ main { //INDEX
             color: #000000;
         }
     }
+
+    #index {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, autofill);
+        grid-template-areas:
+            "header header header"
+            "main   main   main"
+            "footer footer footer";
+    
+        .header {
+            grid-area: herader;
+        }
+    
+        .mainIndex {
+            grid-area: main;
+        }
+    
+        .footer {
+            grid-area: footer;
+        }
+    }
 }
 
-#index {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, autofill);
-    grid-template-areas:
-        "header header header"
-        "main   main   main"
-        "footer footer footer";
+//GRID INDEX
 
-    .header {
-        grid-area: herader;
-    }
-
-    .mainIndex {
-        grid-area: main;
-    }
-
-    .footer {
-        grid-area: footer;
-    }
-}
-
-@media screee and (min-width:320px) and (max-width:479px) {
+@media screen and (min-width:320px) and (max-width:479px) {
 
     #index {
         display: grid;
@@ -330,84 +411,6 @@ main { //INDEX
         .pieDePagina>picture {
             display: none;
         }
-    }
-}
-
-footer { //FOOTER
-    background-color: #7D6E83;
-
-    .pieDePagina {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 2em;
-
-        .logoFooter {
-            width: 8em;
-        }
-
-        .links {
-            h4 {
-                font-size: 0.9em;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                margin-bottom: 0.5em;
-            }
-
-            ul li a {
-                font-size: 0.9em;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                color: #000000;
-            }
-
-            li {
-                margin-bottom: 1em;
-            }
-        }
-
-        .redes {
-            display: flex;
-            flex-direction: column;
-
-            h4 {
-                font-size: 0.9em;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                margin-bottom: 0.5em;
-                color: #000000;
-            }
-
-            a {
-                font-size: 0.9em;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                color: #000000;
-                margin-bottom: 1em;
-            }
-        }
-
-        .informacion {
-            h4 {
-                font-size: 0.9em;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                margin-bottom: 0.5em;
-                color: #000000;
-            }
-
-            ul li {
-                font-size: 0.9em;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                color: #000000;
-            }
-
-            li {
-                margin-bottom: 1em;
-            }
-        }
-    }
-
-    .copyright {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
 
@@ -697,7 +700,7 @@ main {   //GALERIA
     }
 }
 
-main{
+main{    //CONTACTO
 
     .contactoTitulo{
         display: flex;
@@ -774,6 +777,29 @@ main{
             border: 1px solid;
         }
 
+        button{
+            font-size: 0.8em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
 
+        button{
+            display: block;
+            width: 450px;
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ffffff;
+            border-radius: 10px;
+            background-size: 200% auto;
+            background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%);
+            transition: 0.5s;
+
+            :hover{
+                background-position: right center;
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
     }
 }

@@ -1083,7 +1083,7 @@ footer{
     text-align: center;
     text-transform: uppercase;
 
-    color: #ffffffff;          
+    color: #ffffff;
     box-shadow: 0 0 20px #eeeeee;
     border-radius: 10px;
     background-size: 200% auto;
@@ -1094,6 +1094,6 @@ footer{
 
 .contenedorContacto button:hover {
     background-position: right center;
-    color: #ffffffff;
+    color: #ffffff;
     text-decoration: none;
 }
