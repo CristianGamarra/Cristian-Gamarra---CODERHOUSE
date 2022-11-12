@@ -433,10 +433,6 @@ footer{
     margin-bottom: 1em;
 }
 
-.redes a{ /*Color a los iconos*/
-    color: #000000;
-}
-
 /*(FOOTER) INFORMACION*/
 
 .informacion h4{ /*Estilo al titulo de informacion*/
@@ -514,7 +510,7 @@ footer{
     font-size: 4em;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
-    color: #ffffffff;
+    color: #ffffff;
     text-shadow: 2px 3px #000000;
     margin: 1em;
 }
@@ -690,7 +686,8 @@ footer{
         "img8  img9"
         "img10 img10"
         "img11 img12"
-        "img13 img14";}
+        "img13 img14";
+    }
 
     .header{
         height: 100px;
@@ -987,7 +984,6 @@ footer{
 .contactoTitulo h1{  
     font-size: 4em;
     font-family: 'Roboto Condensed', sans-serif;
-    text-shadow: 4px 3px#000000;
     text-transform: uppercase;
     text-shadow: 2px 3px #000000;
     color: #ffffffff;
