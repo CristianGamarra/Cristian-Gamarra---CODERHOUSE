@@ -1,9 +1,9 @@
 @import '../sass/utilities/reset';
-@import '../sass/utilities/header';
+@import '../sass/pages/header';
 @import '../sass/utilities/colors';
 @import '../sass/utilities/fonts';
 @import '../sass/utilities/queries';
-@import '../sass/utilities/footer';
+@import '../sass/pages/footer';
 
 main {   //INDEX
 
@@ -124,7 +124,6 @@ main {   //INDEX
 
 main {   //SOBRE NOSOTROS FALTA TERMINAR LA PAGINA
 
-    
     .nosotrosTitulo {
         display: flex;
         justify-content: center;
@@ -357,3 +356,4 @@ main{    //CONTACTO
         }
     }
 }
+
