@@ -969,6 +969,27 @@ footer{
 
 /*CONTACTO*/
 
+#contacto{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(3, autofill);
+    grid-template-areas: 
+    "header header header"
+    "contacto contacto contacto"
+    "footer footer footer";
+}
+
+#contacto header{
+    grid-area: header;
+}
+
+#contacto main{
+    grid-area: contacto;
+}
+
+#contacto footer{
+    grid-area: footer;
+}
 
 /*Posicionamiento al titulo*/
 
@@ -1096,4 +1117,176 @@ footer{
     background-position: right center;
     color: #ffffff;
     text-decoration: none;
+}
+
+/*CONTACTO MEDIA QUERIES*/
+
+@media screen and (min-width:320px) and (max-width:479px){
+    
+    #contacto{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(3, autofill);
+        grid-template-areas: 
+        "header"
+        "contacto"
+        "footer";
+    }
+
+    .header{
+        height: 100px;
+    }
+
+    .header > nav{
+        font-size: 0.7em;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+    .contactoTitulo h1{
+        font-size: 2em;
+    }
+
+    .contenedorContacto form{
+        width: 90%;
+    }
+
+    .contenedorContacto input{
+        width: 100%;
+    }
+
+    .contenedorContacto textarea{
+        width: 100%;
+    }
+
+    .contenedorContacto button{
+        width: 90%;
+    }
+
+    .pieDePagina .redes{
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8em;
+    }
+
+    .pieDePagina picture{
+        display:none
+    }
+
+    .links, .informacion{
+        display: none;
+    }
+
+    .redes h4{
+        display: none;
+    }
+
+    .redes a{
+        margin-right: 1.1em ;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:767px){
+
+    #contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, autofill);
+        grid-template-areas:
+        "header header"
+        "contacto contacto"
+        "footer footer";
+    }
+
+    .contactoTitulo h1{
+        font-size: 3em;
+    }
+
+    .contenedorContacto form{
+        width: 90%;
+    }
+
+    .contenedorContacto, label button{
+        font-size: 0.8em;
+    }
+
+    .contenedorContacto input{
+        width: 100%;
+    }
+
+    .contenedorContacto textarea{
+        width: 100%;
+    }
+
+    .contenedorContacto button{
+        width: 95%;
+    }
+
+    .pieDePagina > picture{
+        display: none;
+    }
+
+    .pieDePagina .redes{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.2em;
+    }
+
+    .pieDePagina picture{
+        display:none
+    }
+
+    .links, .informacion{
+        display: none;
+    }
+
+    .redes h4{
+        display: none;
+    }
+
+    .redes a{
+        margin-right: 1.2em ;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    #contacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, autofill);
+        grid-template-areas:
+        "header header"
+        "main   main"
+        "footer footer";
+    }  
+
+    .banner .bannerTitulo{
+        font-size: 3em;
+    }
+
+    .banner .bannerParrafo{
+        font-size: 1.5em;
+    }
+
+    .contenedor .contenedorTitulo{
+        font-size: 2em;
+    }
+
+    .contenedor .contenedorParrafo{
+        font-size: 0.9em;
+    }
+
+    .articulo .articuloTitulo{
+        font-size: 2em;
+    }
+
+    .articulo .articuloParrafo{
+        font-size: 0.9em;
+    }
+
+    .pieDePagina > picture{
+        display: none;
+    }
 }
