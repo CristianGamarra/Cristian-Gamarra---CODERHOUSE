@@ -465,7 +465,6 @@ footer{
 
 /*Sobre nosotros*/
 
-
 .nosotrosTitulo{ /*Se utilizo para posicionar al titulo*/
     display: flex;
     justify-content: center;
@@ -481,14 +480,750 @@ footer{
     margin: 2em;
 }
 
-/*----------------------------------------------------*/
-
 .cards{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5em;
+    width: 100%;
+}
+
+/*CARDS SOBRE NOSOTROS*/
+
+.cards .cardDerecha{
+    background-color: #ffffff;
+    width: 45em;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s ease-in;
+}
+
+.cards .cardDerecha:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0 ,0 , 0.2);
+}
+
+.cards .cardDerecha img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.cards .cardDerecha h2{
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 10px;
+}
+
+.cards .cardDerecha p{
+    padding: 2em;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cards .cardIzquierda{
+    background-color: #ffffff;
+    width: 45em;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s ease-in;
+}
+
+.cards .cardIzquierda:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0 ,0 , 0.2);
+}
+
+.cards .cardIzquierda img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.cards .cardIzquierda h2{
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 10px;
+}
+
+.cards .cardIzquierda p{
+    padding: 2em;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*SOBRE NOSOTROS (SERVICIOS)*/
+
+.serviciosTitulo{ /*Se utilizo para posicionar al titulo*/
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+}
+
+.serviciosTitulo > h3{ /*Se utilizo para dar estetica al titulo*/
+    font-size: 4em ;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 3px #000000;
+    color:#ffffffff;
+    margin: 2em;
+}
+
+/*CARDS SERVICIOS*/
+
+.cardsServicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardsServicios .card-1{
+    position: relative;
+    background-color: #ffffff;
+    width: 50em;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s ease-in;
+    
+}
+
+.cardsServicios .card-1:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0 ,0 , 0.2);
+}
+
+.cardsServicios .card-1 img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.cardsServicios .card-1 h4{
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 30px;
+}
+
+.cardsServicios .card-1 p{
+    width: 800px;
+    padding: 1em;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*-------------------*/
+
+.cardsServicios .card-2{
+    background-color: #ffffff;
+    width: 50em;
+    height: 49em;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s ease-in;
+}
+
+.cardsServicios .card-2:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0 ,0 , 0.2);
+}
+
+.cardsServicios .card-2 img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.cardsServicios .card-2 h4{
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 30px;
+}
+
+.cardsServicios .card-2 p{
+    width: 800px;
+    padding: 1em;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*-------------------*/
+
+.cardsServicios .card-3{
+    background-color: #ffffff;
+    width: 50em;
+    height: 46em;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s ease-in;
+}
+
+.cardsServicios .card-3:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0 ,0 , 0.2);
+}
+
+.cardsServicios .card-3 img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.cardsServicios .card-3 h4{
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 30px;
+}
+
+.cardsServicios .card-3 p{
+    padding: 1em;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*-------------------*/
+
+.cardsServicios .card-4{
+    background-color: #ffffff;
+    width: 50em;
+    height: 46em;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s ease-in;
+}
+
+.cardsServicios .card-4:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0 ,0 , 0.2);
+}
+
+.cardsServicios .card-4 img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.cardsServicios .card-4 h4{
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 40px;
+}
+
+.cardsServicios .card-4 p{
+    width: 800px;
+    padding: 1em;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sobreNosotros{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(3, autofill);
+    grid-template-areas: 
+    "header   header   header"
+    "nosotros nosotros nosotros"
+    "footer   footer   footer";
+}
+
+.header{
+    grid-area: header;
+}
+
+.sobreNosotros{
+    grid-area: nosotros;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/*SOBRE NOSOTROS MEDIA QUERIES*/
+
+@media screen and (min-width: 320px) and (max-width:479px){
+
+    #sobreNosotros{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(3, autofill);
+        grid-template-areas: 
+        "header"
+        "nosotros"
+        "footer";
+    }
+
+    .header{
+        height: 100px;
+    }
+
+    .header > nav{
+        font-size: 0.7em;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+    .nosotrosTitulo, h1{
+        font-size: 0.4em ;
+        margin: 1em;
+    }
+
+    /*CARDS SOBRE NOSOTROS*/
+    
+    .cards .cardDerecha{
+        width: 18em;
+        height: 24em;
+        margin: 30px;
+    }
+    
+    .cards .cardDerecha h2{
+        font-size: 1em;
+        padding-top: 5px;
+    }
+    
+    .cards .cardDerecha p{
+        padding: 1.5em;
+        font-size: 0.7em;
+    }
+    
+    .cards .cardIzquierda{
+        width: 18em;
+        height: 20em;
+        margin: 30px;
+    }
+    
+    .cards .cardIzquierda h2{
+        font-size: 1em;
+        padding-top: 5px;
+    }
+    
+    .cards .cardIzquierda p{
+        padding: 1.5em;
+        font-size: 0.7em;
+    }
+
+    .serviciosTitulo, h3{
+        font-size: 0.37em ;
+        margin: 1em;
+    }
+
+    /*CARDS SERVICIOS*/
+
+    .cardsServicios .card-1{
+        height: fit-content;
+    }
+    
+    .cardsServicios .card-1 > h4{
+        font-size: 1em;
+        padding-top: 5px;
+    }
+    
+    .cardsServicios .card-1 p{
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 0.7em;
+    }
+
+    .cardsServicios .card-2{
+        height: fit-content;
+    }
+    
+    .cardsServicios .card-2 > h4{
+        font-size: 1em;
+        padding-top: 5px;
+    }
+    
+    .cardsServicios .card-2 p{
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 0.7em;
+    }
+
+    .cardsServicios .card-3{
+        height: fit-content;
+    }
+    
+    .cardsServicios .card-3 > h4{
+        font-size: 1em;
+        padding-top: 5px;
+    }
+    
+    .cardsServicios .card-3 p{
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 0.7em;
+    }
+
+    .cardsServicios .card-4{
+        height: fit-content;
+    }
+    
+    .cardsServicios .card-4 > h4{
+        font-size: 1em;
+        padding-top: 5px;
+    }
+    
+    .cardsServicios .card-4 p{
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 0.7em;
+    }
+
+    .pieDePagina .redes{
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8em;
+    }
+    
+    .pieDePagina picture{
+        display:none
+    }
+    
+    .links, .informacion{
+        display: none;
+    }
+    
+    .redes h4{
+        display: none;
+    }
+    
+    .redes a{
+        margin-right: 1.1em ;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:767px){
+
+    #sobreNosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(3, autofill);
+        grid-template-areas: 
+        "header header"
+        "nosotros nosotros"
+        "footer nosotros";
+    }
+
+    .header{
+        height: 100px;
+    }
+
+    .header > nav{
+        font-size: 0.7em;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+    .nosotrosTitulo, h1{
+        font-size: 0.6em ;
+        margin: 5px;
+    }
+
+    /*CARDS SOBRE NOSOTROS*/
+    
+    .cards .cardDerecha{
+        width: 28em;
+        height: 28em;
+        margin: 5px;
+    }
+    
+    .cards .cardDerecha h2{
+        font-size: 1.5em;
+        padding-top: 5px;
+    }
+    
+    .cards .cardDerecha p{
+        padding: 1.5em;
+        font-size: 0.8em;
+    }
+    
+    .cards .cardIzquierda{
+        width: 28em;
+        height: 25em;
+        margin: 5px;
+    }
+    
+    .cards .cardIzquierda h2{
+        font-size: 1.5em;
+        padding-top: 5px;
+    }
+    
+    .cards .cardIzquierda p{
+        padding: 1.5em;
+        font-size: 0.8em;
+    }
+
+    .serviciosTitulo, h3{
+        font-size: 0.5em ;
+        margin: 5px;
+    }
+
+    /*CARDS SERVICIOS*/
+
+    .cardsServicios .card-1{
+        width: 27em;
+        height: 29em;
+    }
+    
+    .cardsServicios .card-1 > h4{
+        font-size: 1.5em;
+        padding-top: 5px;
+    }
+    
+    .cardsServicios .card-1 p{
+        width: fit-content;
+        padding: 1em;
+        font-size: 0.8em;
+    }
+
+    .cardsServicios .card-2{
+        width: 27em;
+        height: 27em;
+    }
+    
+    .cardsServicios .card-2 > h4{
+        font-size: 1.5em;
+        padding-top: 5px;
+    }
+    
+    .cardsServicios .card-2 p{
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 0.8em;
+    }
+
+    .cardsServicios .card-3{
+        width: 28em;
+        height: 28em;
+    }
+    
+    .cardsServicios .card-3 > h4{
+        font-size: 1.5em;
+        padding-top: 5px;
+    }
+
+    .cardsServicios .card-3 p{
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 0.8em;
+    }
+
+    .cardsServicios .card-4{
+        width: 26em;
+        height: 26em;
+    }
+    
+    .cardsServicios .card-4 > h4{
+        font-size: 1.5em;
+        padding-top: 5px;
+    }
+    
+    .cardsServicios .card-4 p{
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 0.8em;
+    }
+
+    .pieDePagina .redes{
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8em;
+    }
+    
+    .pieDePagina picture{
+        display:none
+    }
+    
+    .links, .informacion{
+        display: none;
+    }
+    
+    .redes h4{
+        display: none;
+    }
+    
+    .redes a{
+        margin-right: 1.1em ;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+
+    #sobreNosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(3, autofill);
+        grid-template-areas: 
+        "header header"
+        "nosotros nosotros"
+        "footer nosotros";
+    }
+
+    .header{
+        height: 100px;
+    }
+
+    .header > nav{
+        font-size: 0.7em;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+    .nosotrosTitulo , h1{
+        font-size: 0.8em ;
+        margin: 5px;
+    }
+
+    /*CARDS SOBRE NOSOTROS*/
+    
+    .cards .cardDerecha{
+        width: 40em;
+        margin-bottom: 20px;
+    }
+    
+    .cards .cardDerecha h2{
+        font-size:2em;
+        padding-top: 5px;
+    }
+    
+    .cards .cardDerecha p{
+        padding: 1.5em;
+        font-size: 1.1em;
+    }
+    
+    .cards .cardIzquierda{
+        width: 40em;
+        margin: 5px;
+    }
+    
+    .cards .cardIzquierda h2{
+        font-size:2em;
+        padding-top: 5px;
+    }
+    
+    .cards .cardIzquierda p{
+        padding: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .serviciosTitulo, h3{
+        font-size: 0.8em ;
+        margin: 5px;
+    }
+
+    /*CARDS SERVICIOS*/
+
+    .cardsServicios .card-1{
+        width: 40em;
+    }
+    
+    .cardsServicios .card-1 > h4{
+        font-size:2em;
+        padding-top: 5px;
+    }
+    
+    .cardsServicios .card-1 p{
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .cardsServicios .card-2{
+        width: 40em;
+        height: fit-content;
+    }
+    
+    .cardsServicios .card-2 > h4{
+        font-size:2em;
+        padding-top: 5px;
+    }
+    
+    .cardsServicios .card-2 p{
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .cardsServicios .card-3{
+        width: 40em;
+        height: fit-content;
+    }
+    
+    .cardsServicios .card-3 > h4{
+        font-size:2em;
+        padding-top: 5px;
+    }
+
+    .cardsServicios .card-3 p{
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .cardsServicios .card-4{
+        width: 40em;
+        height: fit-content;
+    }
+    
+    .cardsServicios .card-4 > h4{
+        font-size:2em;
+        padding-top: 5px;
+    }
+    
+    .cardsServicios .card-4 p{
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .pieDePagina .redes{
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8em;
+    }
+    
+    .pieDePagina picture{
+        display:none
+    }
+    
+    .links, .informacion{
+        display: none;
+    }
+    
+    .redes h4{
+        display: none;
+    }
+    
+    .redes a{
+        margin-right: 1.1em ;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width:1824px){
+
+    #sobreNosotros{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: repeat(3, autofill);
+        grid-template-areas: 
+        "header   header   header"
+        "nosotros nosotros nosotros"
+        "footer   footer   footer";
+    }
 }
 
 
@@ -768,205 +1503,6 @@ footer{
 
 /*----------------------------------------------------*/
 
-/*SERVICIOS*/
-
-.serviciosTitulo{ /*Se utilizo para posicionar al titulo*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.serviciosTitulo > h2{ /*Se utilizo para dar estetica al titulo*/
-    font-size: 4em ;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
-    text-shadow: 2px 3px #000000;
-    color:#ffffffff;
-    margin: 2em;
-}
-
-/*----------------------------------------------------*/
-
-
-/*Se utilizo para separar el contenido del footer*/
-
-.contenedorCards{ 
-    padding: 3.3em;
-}
-
-/*Posicionamiento de los items*/
-
-.card-1{           
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 5em;
-}
-
-.card-1 >img{
-    width: 50em;
-    box-shadow: 0px 5px 6px #000000;
-}
-
-/*----------------------------------------------------*/
-
-/*Posicionamiento de la imagen*/
-
-.card-2{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 5em;
-}
-
-.card-2 >img{
-    height: 30em;
-    box-shadow: 0px 5px 6px;
-}
-
-/*----------------------------------------------------*/
-
-/*Posicionamiento de la imagen*/
-
-.card-3{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 5em;
-}
-
-.card-3 >img{
-    height: 25em;
-    box-shadow: 0px 5px 6px;
-}
-
-/*----------------------------------------------------*/
-
-/*Posicionamiento de la imagen*/
-
-.card-4{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 5em;
-}
-
-.card-4 >img{ 
-    height: 20em;
-    box-shadow: 0px 5px 6px;
-}
-
-/*----------------------------------------------------*/
-
-/* CARDS PARRAFOS ↓*/
-
-.card-1 > p{ /*Altura padding margin al parrafo*/
-    width: 34em;
-    padding: 2em;
-    margin: 2em;
-}
-
-/*Estilos al parrafo*/
-
-.card-1 > p{ 
-    font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    text-shadow: 2px 0.5px #ffffff;
-}
-
-.card-1 > p{
-    border: 1px solid #000000;
-    box-shadow: 10px 10px 5px;
-    border-radius: 10px;
-    background:linear-gradient(135deg, #00e8f2 0%,#95ea00 100%);
-}
-
-/*----------------------------------------------------*/
-
-/*Altura padding margin al parrafo*/
-
-.card-2 > p{ 
-    width: 18em;
-    padding: 2em;
-    margin: 2em;
-}
-
-/*Estilo al parrafo*/
-
-.card-2 > p{ 
-    font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    text-shadow: 1px 0.5px #ffffff;
-} 
-
-.card-2 > p{
-    border: 1px solid #000000;
-    box-shadow: 10px 10px 5px;
-    border-radius: 10px;
-    background:linear-gradient(135deg, #d177f2 0%,#fcc989 100%);
-}
-
-/*----------------------------------------------------*/
-
-/*Altura padding margin al parrafo*/
-
-.card-3 > p{ 
-    width: 24em;
-    padding: 1em;
-    margin: 2em;
-}
-
-/*Estilo al parrafo*/
-
-.card-3 > p{
-    font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    text-shadow: 2px 0.5px #ffffff;
-} 
-
-.card-3 > p{
-    border: 1px solid #000000;
-    box-shadow: 10px 10px 5px;
-    border-radius: 10px;
-    background:linear-gradient(135deg, #ffe53b 0%,#ff2525 100%);
-}
-
-/*----------------------------------------------------*/
-
-/*Altura padding margin al parrafo*/
-
-.card-4 > p{ 
-    width: 49em;
-    padding: 2em;
-    margin: 2em;
-}
-
-/*Estilo al parrafo*/
-
-.card-4 > p{ 
-    font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    text-shadow: 2px 0.5px #ffffff;
-} 
-
-.card-4 > p{
-    border: 1px solid #000000;
-    box-shadow: 10px 10px 5px;
-    border-radius: 10px;
-    background:linear-gradient(135deg, #ffffff 0%,#6184ff 100%);
-}
-
-/*----------------------------------------------------*/
-
 /*CONTACTO*/
 
 #contacto{
@@ -1186,6 +1722,14 @@ footer{
     .redes a{
         margin-right: 1.1em ;
     }
+
+    .copyright h5{
+        font-size:0.8em;
+    }
+
+    .copyright p{
+        font-size: 0.6em;
+    }
 }
 
 @media screen and (min-width:480px) and (max-width:767px){
@@ -1231,7 +1775,7 @@ footer{
     .pieDePagina .redes{
         display: flex;
         flex-direction: row;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .pieDePagina picture{
@@ -1249,44 +1793,83 @@ footer{
     .redes a{
         margin-right: 1.2em ;
     }
+
+    .copyright h5{
+        font-size:0.8em;
+    }
+
+    .copyright p{
+        font-size: 0.6em;
+    }
 }
 
-@media screen and (min-width:768px) and (max-width:1024px){
-    #contacto{
+@media screen and (min-width:768px) and (max-width:820px){
+
+        #contacto{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, autofill);
         grid-template-areas:
-        "header header"
-        "main   main"
-        "footer footer";
-    }  
+        "header header header"
+        "contacto contacto contacto"
+        "footer footer footer";
+    }
 
-    .banner .bannerTitulo{
+    .contactoTitulo h1{
         font-size: 3em;
     }
 
-    .banner .bannerParrafo{
-        font-size: 1.5em;
+    .contenedorContacto form{
+        width: 90%;
     }
 
-    .contenedor .contenedorTitulo{
-        font-size: 2em;
+    .contenedorContacto, label button{
+        font-size: 0.8em;
     }
 
-    .contenedor .contenedorParrafo{
-        font-size: 0.9em;
+    .contenedorContacto input{
+        width: 100%;
     }
 
-    .articulo .articuloTitulo{
-        font-size: 2em;
+    .contenedorContacto textarea{
+        width: 100%;
     }
 
-    .articulo .articuloParrafo{
-        font-size: 0.9em;
+    .contenedorContacto button{
+        width: 95%;
     }
 
     .pieDePagina > picture{
         display: none;
+    }
+
+    .pieDePagina .redes{
+        display: flex;
+        flex-direction: row;
+        font-size: 1em;
+    }
+
+    .pieDePagina picture{
+        display:none
+    }
+
+    .links, .informacion{
+        display: none;
+    }
+
+    .redes h4{
+        display: none;
+    }
+
+    .redes a{
+        margin-right: 1.2em ;
+    }
+
+    .copyright h5{
+        font-size:0.8em;
+    }
+
+    .copyright p{
+        font-size: 0.6em;
     }
 }
