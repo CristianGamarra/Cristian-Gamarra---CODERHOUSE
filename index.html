@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="felinos, sin hogar, cariño, compañero, cuidados">
+    <meta name="description" content="Bienvenido a nuestro refugio, aqui podras encontrar todo lo relacionado con la adopcion y cuidado de nuestros amigos felinos"
+
 
     <!--AOS TRANSICIONES-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!--CSS-->
+    <link rel="stylesheet" href="./style/style.css">
+
     <!--CSS / SCSS-->
-    <link rel="stylesheet" href="../sass/main.css">
-    
-    <!--CSS LINK-->
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="./sass/main.scss">
 
     <title>Gatitos en casa</title>
 </head>
@@ -22,16 +25,23 @@
 
     <header class="header">
 
-            <a href="#" class="logo">
-                <img src="./Img/Logo.png" alt="mainLogo">
-            </a>
+        <a href="#" class="logo">
+            <img src="./Img/Logo.png" alt="logo del refugio">
+        </a>
 
-        <nav>
+        <nav class="navMenu">
+
+            <input type="checkbox" id="check">    
+            <label for="check" class="checkBoton">
+                <i class="menuIcon"><img src="./assets/menu.svg" alt=""></i>
+            </label>
+
             <ul>
                 <li><a href="./pages/Sobre nosotros.html">Sobre nosotros</a></li>
                 <li><a href="./pages/galeria.html">Galeria</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
+            
         </nav>
 
     </header>
@@ -45,7 +55,8 @@
 
         </div>
 
-        <section class="contenedor" data-aos="fade-right" data-aos-duration="1500"> <!--ANIMACION DE AOS-->
+        <section class="contenedor" data-aos="fade-right" data-aos-duration="1500">
+            <!--ANIMACION DE AOS-->
 
             <h2 class="contenedorTitulo">Nuestra misión</h2>
             <p class="contenedorParrafo">Creemos que los animales no son de la calle, sino que
@@ -59,7 +70,8 @@
 
         </section>
 
-        <article class="articulo" data-aos="fade-left" data-aos-duration="1500"> <!--ANIMACION DE AOS-->
+        <article class="articulo" data-aos="fade-left" data-aos-duration="1500">
+            <!--ANIMACION DE AOS-->
 
             <h3 class="articuloTitulo">Sabias que...?</h3>
             <p class="articuloParrafo">Se ha comprobado que tener un gato reduce el estrés. Normalmente los dueños de
@@ -76,7 +88,7 @@
         <section class="pieDePagina">
 
             <picture>
-                <img src="../img/logoFooter.png" class="logoFooter" alt="logo footer">
+                <img src="../img/logoFooter.png" class="logoFooter" alt="Gatitos en casa logo">
             </picture>
 
             <div class="links">
@@ -98,9 +110,11 @@
                 <h4>Redes Sociales</h4>
 
                 <a href="https://www.facebook.com/de.gatitos/" target="_blank" class="bi-facebook">&nbspFacebook</a>
-                <a href="https://www.instagram.com/gatitosdelsalon/" target="_blank" class="bi-instagram">&nbspInstagram</a>
-                <a href="https://api.whatsapp.com/send?phone=1133790251" target="_blank" class="bi-whatsapp">&nbspWhatsapp</a>
-                
+                <a href="https://www.instagram.com/gatitosdelsalon/" target="_blank"
+                    class="bi-instagram">&nbspInstagram</a>
+                <a href="https://api.whatsapp.com/send?phone=1133790251" target="_blank"
+                    class="bi-whatsapp">&nbspWhatsapp</a>
+
             </div>
 
             <div class="informacion">
@@ -123,7 +137,7 @@
         </section>
 
         <div class="copyright">
-            <h5>Copyright &#169 2022 PAWS</h5> 
+            <h5>Copyright &#169 2022 PAWS</h5>
             <p>Todos los derechos reservados</p>
         </div>
 

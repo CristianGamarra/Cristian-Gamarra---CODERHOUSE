@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="contactanos, correo, informate, email, hotmail, gmail">
+    <meta name="description" content="Para mas informacion no dudes en comunicarte con el refugio, todas tus dudas seran respondidas de inmediato"
 
     <!--AOS TRANSICIONES-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!--CSS / SCSS-->
-    <link rel="stylesheet" href="../sass/main.scss">
 
     <!--CSS LINK-->
     <link rel="stylesheet" href="../style/style.css">
@@ -22,13 +21,19 @@
 
     <header class="header">
 
-        <div class="logo">
-            <a href="../index.html"><img src="../img/Logo.png" alt="mainLogo"></a>
-        </div>
+        <a href="../index.html"  class="logo">
+            <img src="../img/Logo.png" alt="logo del refugio">
+        </a>
 
-        <nav>
+        <nav class="navMenu">
+
+            <input type="checkbox" id="check">    
+            <label for="check" class="checkBoton">
+                <i class="menuIcon"><img src="../assets/menu.svg" alt=""></i>
+            </label>
+
             <ul>
-                <li><a href="../pages/Sobre nosotros.html">Sobre nosotros</a></li>
+                <li><a href="../pages/sobre nosotros.html">Sobre nosotros</a></li>
                 <li><a href="../pages/galeria.html">Galeria</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
@@ -82,7 +87,7 @@
         <section class="pieDePagina">
 
             <picture>
-                <img src="../img/logoFooter.png" class="logoFooter" alt="logo footer">
+                <img src="../img/logoFooter.png" class="logoFooter" alt="Gatitos en casa logo">
             </picture>
 
             <div class="links">

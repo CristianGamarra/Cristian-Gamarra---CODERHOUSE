@@ -5,7 +5,7 @@
 
 /*RESET*/
 
-*{ 
+* {
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -15,58 +15,64 @@
 
 /*HEADER*/
 
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:1em;
+header {
+    padding: 1em;
 }
 
-header{
+header {
     background-color: #F8EDE3;
-    height: 9em;
 }
 
 /*(HEADER) LOGO*/
 
 /*Ancho y animacion al logo*/
 
-.logo img{ 
+.logo img {
     width: 5em;
     transition: all 300ms ease;
 }
 
-.logo img:hover{
+.logo img:hover {
     transform: scale(1.4);
     cursor: pointer;
 }
 
 /*(HEADER) NAVBAR*/
 
-header > nav ul li {
-    display: inline-block; /*Se aplico inline block al navbar*/
-    margin: 1em;
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header > nav li a{
+header > nav ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+header > nav li a {
     font-size: 1.2em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;; 
     color: #000000;
 }
 
-nav ul li a:hover{
+header > nav ul li a:hover {
     color: #ffffff;
     cursor: pointer;
 }
 
+.menuIcon, #check{
+    display: none;
+}
+
 /*(MAIN) BANNER*/
 
-main{
+main {
     background-color: #DFD3C3;
     overflow: hidden;
 }
 
-.banner{
+.banner {
     background-image: url(../Img/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -74,7 +80,7 @@ main{
     height: 50em;
 }
 
-.banner{ 
+.banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,18 +89,21 @@ main{
 
 /*Estilo de titulo y parrafo*/
 
-.bannerTitulo, .bannerParrafo{ 
-    font-family: 'Arimo', sans-serif;
+.bannerTitulo,
+.bannerParrafo {
+    font-family: 'Arimo', sans-serif;;
     color: #ffffffff;
     margin: 0.3em;
     text-shadow: 2px 2px 6px #000000;
 }
 
-.bannerTitulo{ /*Tamaño de fuente del titulo*/
-    font-size: 4em;
+.bannerTitulo {
+    /*Tamaño de fuente del titulo*/
+    font-size: 4em ;
 }
 
-.bannerParrafo{ /*Tamaño de fuente del parrafo*/
+.bannerParrafo {
+    /*Tamaño de fuente del parrafo*/
     font-size: 2em;
 }
 
@@ -102,65 +111,77 @@ main{
 
 /*INDEX*/
 
-.contenedor{ /* Se da un alto y un ancho junto con un color de fondo*/
+.contenedor {
+    /* Se da un alto y un ancho junto con un color de fondo*/
     height: 20em;
     width: auto;
     background-color: #D0B8A8;
 }
 
-.contenedor{ /*Se utiliza para posicionar el elemento*/
+.contenedor {
+    /*Se utiliza para posicionar el elemento*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contenedorTitulo, .contenedorParrafo{ /*Se alinean ambos textos y se le da un ancho*/
+.contenedorTitulo,
+.contenedorParrafo {
+    /*Se alinean ambos textos y se le da un ancho*/
     text-align: center;
-    width:50em;
+    width: 50em;
 }
 
-.contenedorTitulo{ /*Estilo del titulo*/
+.contenedorTitulo {
+    /*Estilo del titulo*/
     font-size: 2em;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;;
     color: #000000;
-    margin:0.3em;
+    margin: 0.3em;
 }
 
-.contenedorParrafo{ /*Estilo del parrafo*/
+.contenedorParrafo {
+    /*Estilo del parrafo*/
     font-size: 1em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;;
     color: #000000;
 }
 
 /*----------------------------------------------------*/
 
-.articulo{ /*Contenedor articulo*/
+.articulo {
+    /*Contenedor articulo*/
     height: 20em;
     width: auto;
     background-color: #DFD3C3;
 }
 
-.articulo{ /*Se utiliza para posicionar los elementos*/
+.articulo {
+    /*Se utiliza para posicionar los elementos*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.articuloTitulo, .articuloParrafo{/*Se alinean ambos textos y se le da un ancho*/
+.articuloTitulo,
+.articuloParrafo {
+    /*Se alinean ambos textos y se le da un ancho*/
     text-align: center;
     width: 50em;
 }
 
-.articuloTitulo{ /*Estilo del titulo*/
+.articuloTitulo {
+    /*Estilo del titulo*/
     font-size: 2em;
     font-family: 'Roboto Condensed', sans-serif;
     color: #000000;
     margin: 0.3em;
 }
 
-.articuloParrafo{ /*Estilo del parrafo*/
+.articuloParrafo {
+    /*Estilo del parrafo*/
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     color: #000000;
@@ -170,207 +191,288 @@ main{
 
 /*INDEX GRID*/
 
-#index{
+#index {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, autofill);
     grid-template-areas:
-    "header header header"
-    "main   main   main"
-    "footer footer footer";
+        "header header header"
+        "main   main   main"
+        "footer footer footer";
 }
 
-#index .header{
-    grid-area:header;
+#index .header {
+    grid-area: header;
 }
 
-#index .mainIndex{
-    grid-area:main;
+#index .mainIndex {
+    grid-area: main;
 }
 
-#index .footer{
-    grid-area:footer;
+#index .footer {
+    grid-area: footer;
 }
 
 /*INDEX MEDIA QUERIES*/
 
-@media screen and (min-width:320px) and (max-width:479px){
-    #index{
+@media screen and (min-width:320px) and (max-width:479px) {
+    #index {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, autofill);
         grid-template-areas:
-        "header"
-        "main"
-        "footer";
+            "header"
+            "main"
+            "footer";
     }
 
-    .header{
+    .header {
         height: 100px;
     }
 
-    .header > nav{
+    .header>nav {
         font-size: 0.7em;
     }
 
-    .logo img{
+    .logo img {
         width: 50px;
     }
+
+    .checkBoton{
+        display: block;
+    }
+
+    .menuIcon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor:pointer;
+    }
+
+    .navMenu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+        background:rgb(124, 89, 89) ;
+        width: 100%;
+        height: 25vh;
+        right: 0;
+    }
+
+    .navMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .navMenu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
     
-    .banner{
+    .banner {
         height: 400px;
     }
 
-    .banner .bannerTitulo{
+    .banner .bannerTitulo {
         font-size: 2em;
     }
 
-    .banner .bannerParrafo{
+    .banner .bannerParrafo {
         font-size: 0.7em;
     }
 
-    .contenedorTitulo{
+    .contenedorTitulo {
         font-size: 2em;
     }
 
-    .contenedorParrafo{
-        font-size:0.7em;
-        width: 300px;
-    }
-
-    .articulo .articuloTitulo{
-        font-size: 2em;
-    }
-
-    .articuloParrafo{
+    .contenedorParrafo {
         font-size: 0.7em;
         width: 300px;
     }
 
-    .pieDePagina .redes{
+    .articulo .articuloTitulo {
+        font-size: 2em;
+    }
+
+    .articuloParrafo {
+        font-size: 0.7em;
+        width: 300px;
+    }
+
+    .pieDePagina .redes {
         display: flex;
         flex-direction: row;
         font-size: 0.8em;
     }
 
-    .pieDePagina picture{
-        display:none
+    .pieDePagina picture {
+        display: none
     }
 
-    .links, .informacion{
+    .links,
+    .informacion {
         display: none;
     }
 
-    .redes h4{
+    .redes h4 {
         display: none;
     }
 
-    .redes a{
-        margin-right: 1.1em ;
+    .redes a {
+        margin-right: 1.1em;
     }
 }
 
 @media screen and (min-width:480px) and (max-width:767px) {
-    #index{
+    #index {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, autofill);
         grid-template-areas:
-        "header"
-        "main"
-        "footer";
+            "header"
+            "main"
+            "footer";
     }
 
-    
-    .banner .bannerTitulo{
+    .checkBoton{
+        display: block;
+    }
+
+    .menuIcon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor:pointer;
+    }
+
+    .navMenu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+        background:rgb(124, 89, 89) ;
+        width: 100%;
+        height: 25vh;
+        right: 0;
+    }
+
+    .navMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .navMenu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+
+    .banner .bannerTitulo {
         font-size: 3em;
     }
 
-    .banner .bannerParrafo{
+    .banner .bannerParrafo {
         font-size: 1em;
     }
 
-    .contenedor .contenedorTitulo{
+    .contenedor .contenedorTitulo {
         font-size: 2em;
     }
 
-    .contenedor .contenedorParrafo{
+    .contenedor .contenedorParrafo {
         font-size: 0.9em;
         width: 400px;
     }
 
-    .articulo .articuloTitulo{
+    .articulo .articuloTitulo {
         font-size: 2em;
     }
 
-    .articulo .articuloParrafo{
+    .articulo .articuloParrafo {
         font-size: 0.9em;
         width: 400px;
     }
 
-    .pieDePagina > picture{
+    .pieDePagina>picture {
         display: none;
     }
 
-    .pieDePagina .redes{
+    .pieDePagina .redes {
         display: flex;
         flex-direction: row;
         font-size: 1.2em;
     }
 
-    .pieDePagina picture{
-        display:none
+    .pieDePagina picture {
+        display: none
     }
 
-    .links, .informacion{
+    .links,
+    .informacion {
         display: none;
     }
 
-    .redes h4{
+    .redes h4 {
         display: none;
     }
 
-    .redes a{
-        margin-right: 1.2em ;
+    .redes a {
+        margin-right: 1.2em;
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1024px){
-    #index{
+@media screen and (min-width:768px) and (max-width:1024px) {
+    #index {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, autofill);
         grid-template-areas:
-        "header header"
-        "main   main"
-        "footer footer";
-    }  
+            "header header"
+            "main   main"
+            "footer footer";
+    }
 
-    .banner .bannerTitulo{
+    .banner .bannerTitulo {
         font-size: 3em;
     }
 
-    .banner .bannerParrafo{
+    .banner .bannerParrafo {
         font-size: 1.5em;
     }
 
-    .contenedor .contenedorTitulo{
+    .contenedor .contenedorTitulo {
         font-size: 2em;
     }
 
-    .contenedor .contenedorParrafo{
+    .contenedor .contenedorParrafo {
         font-size: 0.9em;
     }
 
-    .articulo .articuloTitulo{
+    .articulo .articuloTitulo {
         font-size: 2em;
     }
 
-    .articulo .articuloParrafo{
+    .articulo .articuloParrafo {
         font-size: 0.9em;
     }
 
-    .pieDePagina > picture{
+    .pieDePagina>picture {
         display: none;
     }
 }
@@ -379,54 +481,60 @@ main{
 
 /*FOOTER*/
 
-footer{
+footer {
     background-color: #7D6E83;
 }
 
-.pieDePagina{ /*Se utilizo para posicionar el contenido*/
+.pieDePagina {
+    /*Se utilizo para posicionar el contenido*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 2em;
 }
 
-.logoFooter{ /*Ancho del logo*/
+.logoFooter {
+    /*Ancho del logo*/
     width: 8em;
 }
 
 /*(FOOTER) LINKS*/
 
-.links h4{ /*Estilo al titulo de links*/
+.links h4 { /*Estilo al titulo de links*/
+
     font-size: 0.9em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;;
     margin-bottom: 0.5em;
 }
 
-.links ul li a{ /*Estilo a la lista links*/
+.links ul li a {
+    /*Estilo a la lista links*/
     font-size: 0.9em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
     color: #000000;
 }
 
-.links li{ /*Margin bottom entre cada lista*/
+.links li {
+    /*Margin bottom entre cada lista*/
     margin-bottom: 1em;
 }
 
 /*(FOOTER) REDES*/
 
-.redes{ /*Se utilizo para posicionar los iconos de las redes sociales*/
+.redes {
+    /*Se utilizo para posicionar los iconos de las redes sociales*/
     display: flex;
     flex-direction: column;
 }
 
-.redes h4{
+.redes h4 {
     font-size: 0.9em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 0.5em;
     color: #000000;
 }
 
-.redes a{
+.redes a {
     font-size: 0.9em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #000000;
@@ -435,26 +543,30 @@ footer{
 
 /*(FOOTER) INFORMACION*/
 
-.informacion h4{ /*Estilo al titulo de informacion*/
+.informacion h4 {
+    /*Estilo al titulo de informacion*/
     font-size: 0.9em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 0.5em;
     color: #000000;
 }
 
-.informacion ul li {/*Estilo a la lista informacion*/
+.informacion ul li {
+    /*Estilo a la lista informacion*/
     font-size: 0.9em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #000000;
 }
 
-.informacion li{ /*Margin bottom entre cada lista*/
+.informacion li {
+    /*Margin bottom entre cada lista*/
     margin-bottom: 1em;
 }
 
 /*(FOOTER) COPYRIGHT*/
 
-.copyright{ /*Se utilizo para posicionar el texto*/
+.copyright {
+    /*Se utilizo para posicionar el texto*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -465,22 +577,24 @@ footer{
 
 /*Sobre nosotros*/
 
-.nosotrosTitulo{ /*Se utilizo para posicionar al titulo*/
+.nosotrosTitulo {
+    /*Se utilizo para posicionar al titulo*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nosotrosTitulo h1{ /*Al titulo se le aplico estetica*/
-    font-size: 4em ;
+.nosotrosTitulo h1 {
+    /*Al titulo se le aplico estetica*/
+    font-size: 4em;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     text-shadow: 2px 3px #000000;
-    color:#ffffffff;
+    color: #ffffffff;
     margin: 2em;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -490,7 +604,7 @@ footer{
 
 /*CARDS SOBRE NOSOTROS*/
 
-.cards .cardDerecha{
+.cards .cardDerecha {
     background-color: #ffffff;
     width: 45em;
     border-radius: 8px;
@@ -500,29 +614,29 @@ footer{
     transition: all 0.25s ease-in;
 }
 
-.cards .cardDerecha:hover{
+.cards .cardDerecha:hover {
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0 ,0 , 0.2);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.cards .cardDerecha img{
+.cards .cardDerecha img {
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
 
-.cards .cardDerecha h2{
+.cards .cardDerecha h2 {
     font-size: 2em;
     font-family: 'Roboto Condensed', sans-serif;
     padding-top: 10px;
 }
 
-.cards .cardDerecha p{
+.cards .cardDerecha p {
     padding: 2em;
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
 }
 
-.cards .cardIzquierda{
+.cards .cardIzquierda {
     background-color: #ffffff;
     width: 45em;
     border-radius: 8px;
@@ -532,23 +646,23 @@ footer{
     transition: all 0.25s ease-in;
 }
 
-.cards .cardIzquierda:hover{
+.cards .cardIzquierda:hover {
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0 ,0 , 0.2);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.cards .cardIzquierda img{
+.cards .cardIzquierda img {
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
 
-.cards .cardIzquierda h2{
+.cards .cardIzquierda h2 {
     font-size: 2em;
     font-family: 'Roboto Condensed', sans-serif;
     padding-top: 10px;
 }
 
-.cards .cardIzquierda p{
+.cards .cardIzquierda p {
     padding: 2em;
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
@@ -556,32 +670,34 @@ footer{
 
 /*SOBRE NOSOTROS (SERVICIOS)*/
 
-.serviciosTitulo{ /*Se utilizo para posicionar al titulo*/
+.serviciosTitulo {
+    /*Se utilizo para posicionar al titulo*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.serviciosTitulo > h3{ /*Se utilizo para dar estetica al titulo*/
-    font-size: 4em ;
+.serviciosTitulo>h3 {
+    /*Se utilizo para dar estetica al titulo*/
+    font-size: 4em;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     text-shadow: 2px 3px #000000;
-    color:#ffffffff;
+    color: #ffffffff;
     margin: 2em;
 }
 
 /*CARDS SERVICIOS*/
 
-.cardsServicios{
+.cardsServicios {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.cardsServicios .card-1{
+.cardsServicios .card-1 {
     position: relative;
     background-color: #ffffff;
     width: 50em;
@@ -591,26 +707,26 @@ footer{
     margin: 20px;
     text-align: center;
     transition: all 0.25s ease-in;
-    
+
 }
 
-.cardsServicios .card-1:hover{
+.cardsServicios .card-1:hover {
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0 ,0 , 0.2);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.cardsServicios .card-1 img{
+.cardsServicios .card-1 img {
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
 
-.cardsServicios .card-1 h4{
+.cardsServicios .card-1 h4 {
     font-size: 2em;
     font-family: 'Roboto Condensed', sans-serif;
     padding-top: 30px;
 }
 
-.cardsServicios .card-1 p{
+.cardsServicios .card-1 p {
     width: 800px;
     padding: 1em;
     font-size: 1.3em;
@@ -619,7 +735,7 @@ footer{
 
 /*-------------------*/
 
-.cardsServicios .card-2{
+.cardsServicios .card-2 {
     background-color: #ffffff;
     width: 50em;
     height: 49em;
@@ -630,23 +746,23 @@ footer{
     transition: all 0.25s ease-in;
 }
 
-.cardsServicios .card-2:hover{
+.cardsServicios .card-2:hover {
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0 ,0 , 0.2);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.cardsServicios .card-2 img{
+.cardsServicios .card-2 img {
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
 
-.cardsServicios .card-2 h4{
+.cardsServicios .card-2 h4 {
     font-size: 2em;
     font-family: 'Roboto Condensed', sans-serif;
     padding-top: 30px;
 }
 
-.cardsServicios .card-2 p{
+.cardsServicios .card-2 p {
     width: 800px;
     padding: 1em;
     font-size: 1.3em;
@@ -655,7 +771,7 @@ footer{
 
 /*-------------------*/
 
-.cardsServicios .card-3{
+.cardsServicios .card-3 {
     background-color: #ffffff;
     width: 50em;
     height: 46em;
@@ -666,23 +782,23 @@ footer{
     transition: all 0.25s ease-in;
 }
 
-.cardsServicios .card-3:hover{
+.cardsServicios .card-3:hover {
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0 ,0 , 0.2);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.cardsServicios .card-3 img{
+.cardsServicios .card-3 img {
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
 
-.cardsServicios .card-3 h4{
+.cardsServicios .card-3 h4 {
     font-size: 2em;
     font-family: 'Roboto Condensed', sans-serif;
     padding-top: 30px;
 }
 
-.cardsServicios .card-3 p{
+.cardsServicios .card-3 p {
     padding: 1em;
     font-size: 1.3em;
     font-family: 'Montserrat', sans-serif;
@@ -690,7 +806,7 @@ footer{
 
 /*-------------------*/
 
-.cardsServicios .card-4{
+.cardsServicios .card-4 {
     background-color: #ffffff;
     width: 50em;
     height: 46em;
@@ -701,528 +817,617 @@ footer{
     transition: all 0.25s ease-in;
 }
 
-.cardsServicios .card-4:hover{
+.cardsServicios .card-4:hover {
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0 ,0 , 0.2);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.cardsServicios .card-4 img{
+.cardsServicios .card-4 img {
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
 
-.cardsServicios .card-4 h4{
+.cardsServicios .card-4 h4 {
     font-size: 2em;
     font-family: 'Roboto Condensed', sans-serif;
     padding-top: 40px;
 }
 
-.cardsServicios .card-4 p{
+.cardsServicios .card-4 p {
     width: 800px;
     padding: 1em;
     font-size: 1.3em;
     font-family: 'Montserrat', sans-serif;
 }
 
-#sobreNosotros{
+#sobreNosotros {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, autofill);
-    grid-template-areas: 
-    "header   header   header"
-    "nosotros nosotros nosotros"
-    "footer   footer   footer";
+    grid-template-areas:
+        "header   header   header"
+        "nosotros nosotros nosotros"
+        "footer   footer   footer";
 }
 
-.header{
+.header {
     grid-area: header;
 }
 
-.sobreNosotros{
+.sobreNosotros {
     grid-area: nosotros;
 }
 
-.footer{
+.footer {
     grid-area: footer;
 }
 
 /*SOBRE NOSOTROS MEDIA QUERIES*/
 
-@media screen and (min-width: 320px) and (max-width:479px){
+@media screen and (min-width: 320px) and (max-width:479px) {
 
-    #sobreNosotros{
+    #sobreNosotros {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(3, autofill);
-        grid-template-areas: 
-        "header"
-        "nosotros"
-        "footer";
+        grid-template-areas:
+            "header"
+            "nosotros"
+            "footer";
     }
 
-    .header{
+    .header {
         height: 100px;
     }
 
-    .header > nav{
+    .header>nav {
         font-size: 0.7em;
     }
 
-    .logo img{
+    .logo img {
         width: 50px;
     }
 
-    .nosotrosTitulo, h1{
-        font-size: 0.4em ;
+    .checkBoton{
+        display: block;
+    }
+
+    .menuIcon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor:pointer;
+    }
+
+    .navMenu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+        background:rgb(124, 89, 89) ;
+        width: 100%;
+        height: 25vh;
+        right: 0;
+    }
+
+    .navMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .navMenu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+
+    .nosotrosTitulo,
+    h1 {
+        font-size: 0.4em;
         margin: 1em;
     }
 
     /*CARDS SOBRE NOSOTROS*/
-    
-    .cards .cardDerecha{
+
+    .cards .cardDerecha {
         width: 18em;
         height: 24em;
         margin: 30px;
     }
-    
-    .cards .cardDerecha h2{
+
+    .cards .cardDerecha h2 {
         font-size: 1em;
         padding-top: 5px;
     }
-    
-    .cards .cardDerecha p{
-        padding: 1.5em;
-        font-size: 0.7em;
-    }
-    
-    .cards .cardIzquierda{
-        width: 18em;
-        height: 20em;
-        margin: 30px;
-    }
-    
-    .cards .cardIzquierda h2{
-        font-size: 1em;
-        padding-top: 5px;
-    }
-    
-    .cards .cardIzquierda p{
+
+    .cards .cardDerecha p {
         padding: 1.5em;
         font-size: 0.7em;
     }
 
-    .serviciosTitulo, h3{
-        font-size: 0.37em ;
+    .cards .cardIzquierda {
+        width: 18em;
+        height: 20em;
+        margin: 30px;
+    }
+
+    .cards .cardIzquierda h2 {
+        font-size: 1em;
+        padding-top: 5px;
+    }
+
+    .cards .cardIzquierda p {
+        padding: 1.5em;
+        font-size: 0.7em;
+    }
+
+    .serviciosTitulo,
+    h3 {
+        font-size: 0.37em;
         margin: 1em;
     }
 
     /*CARDS SERVICIOS*/
 
-    .cardsServicios .card-1{
+    .cardsServicios .card-1 {
         height: fit-content;
     }
-    
-    .cardsServicios .card-1 > h4{
+
+    .cardsServicios .card-1>h4 {
         font-size: 1em;
         padding-top: 5px;
     }
-    
-    .cardsServicios .card-1 p{
+
+    .cardsServicios .card-1 p {
         width: fit-content;
         padding: 1.5em;
         font-size: 0.7em;
     }
 
-    .cardsServicios .card-2{
+    .cardsServicios .card-2 {
         height: fit-content;
     }
-    
-    .cardsServicios .card-2 > h4{
+
+    .cardsServicios .card-2>h4 {
         font-size: 1em;
         padding-top: 5px;
     }
-    
-    .cardsServicios .card-2 p{
+
+    .cardsServicios .card-2 p {
         width: fit-content;
         padding: 1.5em;
         font-size: 0.7em;
     }
 
-    .cardsServicios .card-3{
+    .cardsServicios .card-3 {
         height: fit-content;
     }
-    
-    .cardsServicios .card-3 > h4{
+
+    .cardsServicios .card-3>h4 {
         font-size: 1em;
         padding-top: 5px;
     }
-    
-    .cardsServicios .card-3 p{
+
+    .cardsServicios .card-3 p {
         width: fit-content;
         padding: 1.5em;
         font-size: 0.7em;
     }
 
-    .cardsServicios .card-4{
+    .cardsServicios .card-4 {
         height: fit-content;
     }
-    
-    .cardsServicios .card-4 > h4{
+
+    .cardsServicios .card-4>h4 {
         font-size: 1em;
         padding-top: 5px;
     }
-    
-    .cardsServicios .card-4 p{
+
+    .cardsServicios .card-4 p {
         width: fit-content;
         padding: 1.5em;
         font-size: 0.7em;
     }
 
-    .pieDePagina .redes{
+    .pieDePagina .redes {
         display: flex;
         flex-direction: row;
         font-size: 0.8em;
     }
-    
-    .pieDePagina picture{
-        display:none
+
+    .pieDePagina picture {
+        display: none
     }
-    
-    .links, .informacion{
+
+    .links,
+    .informacion {
         display: none;
     }
-    
-    .redes h4{
+
+    .redes h4 {
         display: none;
     }
-    
-    .redes a{
-        margin-right: 1.1em ;
+
+    .redes a {
+        margin-right: 1.1em;
     }
 }
 
-@media screen and (min-width: 480px) and (max-width:767px){
+@media screen and (min-width: 480px) and (max-width:767px) {
 
-    #sobreNosotros{
+    #sobreNosotros {
         display: grid;
-        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, autofill);
-        grid-template-areas: 
-        "header header"
-        "nosotros nosotros"
-        "footer nosotros";
+        grid-template-areas:
+            "header header"
+            "nosotros nosotros"
+            "footer nosotros";
     }
 
-    .header{
+    .header {
         height: 100px;
     }
 
-    .header > nav{
+    .header>nav {
         font-size: 0.7em;
     }
 
-    .logo img{
+    .logo img {
         width: 50px;
     }
 
-    .nosotrosTitulo, h1{
-        font-size: 0.6em ;
+    .checkBoton{
+        display: block;
+    }
+
+    .menuIcon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor:pointer;
+    }
+
+    .navMenu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+        background:rgb(124, 89, 89) ;
+        width: 100%;
+        height: 25vh;
+        right: 0;
+    }
+
+    .navMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .navMenu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+
+    .nosotrosTitulo,
+    h1 {
+        font-size: 0.6em;
         margin: 5px;
     }
 
     /*CARDS SOBRE NOSOTROS*/
-    
-    .cards .cardDerecha{
+
+    .cards .cardDerecha {
         width: 28em;
         height: 28em;
         margin: 5px;
     }
-    
-    .cards .cardDerecha h2{
+
+    .cards .cardDerecha h2 {
         font-size: 1.5em;
         padding-top: 5px;
     }
-    
-    .cards .cardDerecha p{
-        padding: 1.5em;
-        font-size: 0.8em;
-    }
-    
-    .cards .cardIzquierda{
-        width: 28em;
-        height: 25em;
-        margin: 5px;
-    }
-    
-    .cards .cardIzquierda h2{
-        font-size: 1.5em;
-        padding-top: 5px;
-    }
-    
-    .cards .cardIzquierda p{
+
+    .cards .cardDerecha p {
         padding: 1.5em;
         font-size: 0.8em;
     }
 
-    .serviciosTitulo, h3{
-        font-size: 0.5em ;
+    .cards .cardIzquierda {
+        width: 28em;
+        height: 25em;
+        margin: 5px;
+    }
+
+    .cards .cardIzquierda h2 {
+        font-size: 1.5em;
+        padding-top: 5px;
+    }
+
+    .cards .cardIzquierda p {
+        padding: 1.5em;
+        font-size: 0.8em;
+    }
+
+    .serviciosTitulo,
+    h3 {
+        font-size: 0.5em;
         margin: 5px;
     }
 
     /*CARDS SERVICIOS*/
 
-    .cardsServicios .card-1{
+    .cardsServicios .card-1 {
         width: 27em;
         height: 29em;
     }
-    
-    .cardsServicios .card-1 > h4{
+
+    .cardsServicios .card-1>h4 {
         font-size: 1.5em;
         padding-top: 5px;
     }
-    
-    .cardsServicios .card-1 p{
+
+    .cardsServicios .card-1 p {
         width: fit-content;
         padding: 1em;
         font-size: 0.8em;
     }
 
-    .cardsServicios .card-2{
+    .cardsServicios .card-2 {
         width: 27em;
         height: 27em;
     }
-    
-    .cardsServicios .card-2 > h4{
+
+    .cardsServicios .card-2>h4 {
         font-size: 1.5em;
         padding-top: 5px;
     }
-    
-    .cardsServicios .card-2 p{
+
+    .cardsServicios .card-2 p {
         width: fit-content;
         padding: 1.5em;
         font-size: 0.8em;
     }
 
-    .cardsServicios .card-3{
+    .cardsServicios .card-3 {
         width: 28em;
         height: 28em;
     }
-    
-    .cardsServicios .card-3 > h4{
+
+    .cardsServicios .card-3>h4 {
         font-size: 1.5em;
         padding-top: 5px;
     }
 
-    .cardsServicios .card-3 p{
+    .cardsServicios .card-3 p {
         width: fit-content;
         padding: 1.5em;
         font-size: 0.8em;
     }
 
-    .cardsServicios .card-4{
+    .cardsServicios .card-4 {
         width: 26em;
         height: 26em;
     }
-    
-    .cardsServicios .card-4 > h4{
+
+    .cardsServicios .card-4>h4 {
         font-size: 1.5em;
         padding-top: 5px;
     }
-    
-    .cardsServicios .card-4 p{
+
+    .cardsServicios .card-4 p {
         width: fit-content;
         padding: 1.5em;
         font-size: 0.8em;
     }
 
-    .pieDePagina .redes{
+    .pieDePagina .redes {
         display: flex;
         flex-direction: row;
         font-size: 0.8em;
     }
-    
-    .pieDePagina picture{
-        display:none
+
+    .pieDePagina picture {
+        display: none
     }
-    
-    .links, .informacion{
+
+    .links,
+    .informacion {
         display: none;
     }
-    
-    .redes h4{
+
+    .redes h4 {
         display: none;
     }
-    
-    .redes a{
-        margin-right: 1.1em ;
+
+    .redes a {
+        margin-right: 1.1em;
     }
 
 }
 
-@media screen and (min-width: 768px) and (max-width:1024px){
+@media screen and (min-width: 768px) and (max-width:1024px) {
 
-    #sobreNosotros{
+    #sobreNosotros {
         display: grid;
-        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, autofill);
-        grid-template-areas: 
-        "header header"
-        "nosotros nosotros"
-        "footer nosotros";
+        grid-template-areas:
+            "header header"
+            "nosotros nosotros"
+            "footer nosotros";
     }
 
-    .header{
+    .header {
         height: 100px;
     }
 
-    .header > nav{
+    .header>nav {
         font-size: 0.7em;
     }
 
-    .logo img{
+    .logo img {
         width: 50px;
     }
 
-    .nosotrosTitulo , h1{
-        font-size: 0.8em ;
+    .nosotrosTitulo,
+    h1 {
+        font-size: 0.8em;
         margin: 5px;
     }
 
     /*CARDS SOBRE NOSOTROS*/
-    
-    .cards .cardDerecha{
+
+    .cards .cardDerecha {
         width: 40em;
         margin-bottom: 20px;
     }
-    
-    .cards .cardDerecha h2{
-        font-size:2em;
+
+    .cards .cardDerecha h2 {
+        font-size: 2em;
         padding-top: 5px;
     }
-    
-    .cards .cardDerecha p{
-        padding: 1.5em;
-        font-size: 1.1em;
-    }
-    
-    .cards .cardIzquierda{
-        width: 40em;
-        margin: 5px;
-    }
-    
-    .cards .cardIzquierda h2{
-        font-size:2em;
-        padding-top: 5px;
-    }
-    
-    .cards .cardIzquierda p{
+
+    .cards .cardDerecha p {
         padding: 1.5em;
         font-size: 1.1em;
     }
 
-    .serviciosTitulo, h3{
-        font-size: 0.8em ;
+    .cards .cardIzquierda {
+        width: 40em;
+        margin: 5px;
+    }
+
+    .cards .cardIzquierda h2 {
+        font-size: 2em;
+        padding-top: 5px;
+    }
+
+    .cards .cardIzquierda p {
+        padding: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .serviciosTitulo,
+    h3 {
+        font-size: 0.8em;
         margin: 5px;
     }
 
     /*CARDS SERVICIOS*/
 
-    .cardsServicios .card-1{
+    .cardsServicios .card-1 {
         width: 40em;
     }
-    
-    .cardsServicios .card-1 > h4{
-        font-size:2em;
+
+    .cardsServicios .card-1>h4 {
+        font-size: 2em;
         padding-top: 5px;
     }
-    
-    .cardsServicios .card-1 p{
+
+    .cardsServicios .card-1 p {
         width: fit-content;
         padding: 1.5em;
         font-size: 1.1em;
     }
 
-    .cardsServicios .card-2{
-        width: 40em;
-        height: fit-content;
-    }
-    
-    .cardsServicios .card-2 > h4{
-        font-size:2em;
-        padding-top: 5px;
-    }
-    
-    .cardsServicios .card-2 p{
-        width: fit-content;
-        padding: 1.5em;
-        font-size: 1.1em;
-    }
-
-    .cardsServicios .card-3{
+    .cardsServicios .card-2 {
         width: 40em;
         height: fit-content;
     }
-    
-    .cardsServicios .card-3 > h4{
-        font-size:2em;
+
+    .cardsServicios .card-2>h4 {
+        font-size: 2em;
         padding-top: 5px;
     }
 
-    .cardsServicios .card-3 p{
+    .cardsServicios .card-2 p {
         width: fit-content;
         padding: 1.5em;
         font-size: 1.1em;
     }
 
-    .cardsServicios .card-4{
+    .cardsServicios .card-3 {
         width: 40em;
         height: fit-content;
     }
-    
-    .cardsServicios .card-4 > h4{
-        font-size:2em;
+
+    .cardsServicios .card-3>h4 {
+        font-size: 2em;
         padding-top: 5px;
     }
-    
-    .cardsServicios .card-4 p{
+
+    .cardsServicios .card-3 p {
         width: fit-content;
         padding: 1.5em;
         font-size: 1.1em;
     }
 
-    .pieDePagina .redes{
+    .cardsServicios .card-4 {
+        width: 40em;
+        height: fit-content;
+    }
+
+    .cardsServicios .card-4>h4 {
+        font-size: 2em;
+        padding-top: 5px;
+    }
+
+    .cardsServicios .card-4 p {
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .pieDePagina .redes {
         display: flex;
         flex-direction: row;
         font-size: 0.8em;
     }
-    
-    .pieDePagina picture{
-        display:none
+
+    .pieDePagina picture {
+        display: none
     }
-    
-    .links, .informacion{
+
+    .links,
+    .informacion {
         display: none;
     }
-    
-    .redes h4{
+
+    .redes h4 {
         display: none;
     }
-    
-    .redes a{
-        margin-right: 1.1em ;
+
+    .redes a {
+        margin-right: 1.1em;
     }
 }
 
-@media screen and (min-width: 1280px) and (max-width:1824px){
+@media screen and (min-width: 1280px) and (max-width:1824px) {
 
-    #sobreNosotros{
+    #sobreNosotros {
         display: grid;
-        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, autofill);
-        grid-template-areas: 
-        "header   header   header"
-        "nosotros nosotros nosotros"
-        "footer   footer   footer";
+        grid-template-areas:
+            "header   header   header"
+            "nosotros nosotros nosotros"
+            "footer   footer   footer";
     }
 }
 
@@ -1233,7 +1438,7 @@ footer{
 
 /*Se utilizo para posicionar al titulo de la galeria*/
 
-.galeriaTitulo{ 
+.galeriaTitulo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1241,7 +1446,7 @@ footer{
 
 /*Al titulo se le asigno estilo en su fuente*/
 
-.galeriaTitulo > h1{ 
+.galeriaTitulo>h1 {
     font-size: 4em;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
@@ -1252,7 +1457,7 @@ footer{
 
 /*Flexbox al contenedor galeria*/
 
-#galeria{
+#galeria {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1262,78 +1467,78 @@ footer{
 
 /*Grids a la galeria*/
 
-#galeria{
+#galeria {
     display: grid;
     grid-template-columns: repeat(4, 400px);
     grid-template-rows: repeat(5, 300px);
-    grid-template-areas: 
-    "img1  img8  img2  img11"
-    "img1  img6  img2  img5"
-    "img10 img9  img12 img5"
-    "img7  img9  img14 img4"
-    "img3  img13 img13 img4";
+    grid-template-areas:
+        "img1  img8  img2  img11"
+        "img1  img6  img2  img5"
+        "img10 img9  img12 img5"
+        "img7  img9  img14 img4"
+        "img3  img13 img13 img4";
     gap: 20px;
 }
 
-.img-1{
+.img-1 {
     grid-area: img1;
 }
 
-.img-2{
+.img-2 {
     grid-area: img2;
 }
 
-.img-3{
+.img-3 {
     grid-area: img3;
 }
 
-.img-4{
+.img-4 {
     grid-area: img4;
 }
 
-.img-5{
+.img-5 {
     grid-area: img5;
 }
 
-.img-6{
+.img-6 {
     grid-area: img6;
 }
 
-.img-7{
+.img-7 {
     grid-area: img7;
 }
 
-.img-8{
+.img-8 {
     grid-area: img8;
 }
 
-.img-9{
+.img-9 {
     grid-area: img9;
 }
 
-.img-10{
+.img-10 {
     grid-area: img10;
 }
 
-.img-11{
+.img-11 {
     grid-area: img11;
 }
 
-.img-12{
+.img-12 {
     grid-area: img12;
 }
 
-.img-13{
+.img-13 {
     grid-area: img13;
-} 
+}
 
-.img-14{
+.img-14 {
     grid-area: img14;
 }
 
 /*Estilo de todas las imagenes*/
 
-.img{
+.img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -1342,162 +1547,244 @@ footer{
     transition: all 300ms ease;
 }
 
-.img:hover{
+.img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
 /*Galeria Media Queries*/
 
-@media screen and (min-width: 320px) and (max-width:479px){
+@media screen and (min-width: 320px) and (max-width:479px) {
 
-    #galeria{
+    #galeria {
         display: grid;
-        grid-template-columns: repeat(2,140px);
-        grid-template-rows:repeat(9, 140px);
+        grid-template-columns: repeat(2, 140px);
+        grid-template-rows: repeat(9, 140px);
         grid-template-areas:
-        "img1  img1"
-        "img2  img3"
-        "img4  img4"
-        "img5  img6"
-        "img7  img7"
-        "img8  img9"
-        "img10 img10"
-        "img11 img12"
-        "img13 img14";
+            "img1  img1"
+            "img2  img3"
+            "img4  img4"
+            "img5  img6"
+            "img7  img7"
+            "img8  img9"
+            "img10 img10"
+            "img11 img12"
+            "img13 img14";
     }
 
-    .header{
+    .header {
         height: 100px;
     }
 
-    .header > nav{
+    .header>nav {
         font-size: 0.7em;
     }
 
-    .logo img{
+    .logo img {
         width: 50px;
     }
 
-    .galeriaTitulo h1{
-        font-size:1.5em;
+    .checkBoton{
+        display: block;
     }
 
-    .pieDePagina .redes{
+    .menuIcon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor:pointer;
+    }
+
+    .navMenu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+        background:rgb(124, 89, 89) ;
+        width: 100%;
+        height: 25vh;
+        right: 0;
+    }
+
+    .navMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .navMenu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+
+    .galeriaTitulo h1 {
+        font-size: 1.5em;
+    }
+
+    .pieDePagina .redes {
         display: flex;
         flex-direction: row;
         font-size: 0.8em;
     }
-    
-    .pieDePagina picture{
-        display:none
+
+    .pieDePagina picture {
+        display: none
     }
-    
-    .links, .informacion{
+
+    .links,
+    .informacion {
         display: none;
     }
-    
-    .redes h4{
+
+    .redes h4 {
         display: none;
     }
-    
-    .redes a{
-        margin-right: 1.1em ;
+
+    .redes a {
+        margin-right: 1.1em;
     }
 }
 
-@media screen and (min-width: 480px) and (max-width:767px){
+@media screen and (min-width: 480px) and (max-width:767px) {
 
-    #galeria{
+    #galeria {
         display: grid;
-        grid-template-columns: repeat(2,200px);
-        grid-template-rows:repeat(9, 200px);
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(9, 200px);
         grid-template-areas:
-        "img1  img1"
-        "img2  img3"
-        "img4  img4"
-        "img5  img6"
-        "img7  img7"
-        "img8  img9"
-        "img10 img10"
-        "img11 img12"
-        "img13 img14";
+            "img1  img1"
+            "img2  img3"
+            "img4  img4"
+            "img5  img6"
+            "img7  img7"
+            "img8  img9"
+            "img10 img10"
+            "img11 img12"
+            "img13 img14";
     }
 
-    .header{
+    .header {
         height: 100px;
     }
 
-    .header > nav{
+    .header>nav {
         font-size: 0.7em;
     }
 
-    .logo img{
+    .logo img {
         width: 50px;
     }
 
-    .galeriaTitulo h1{
-        font-size:2em;
+    .checkBoton{
+        display: block;
     }
 
-    .pieDePagina .redes{
+    .menuIcon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor:pointer;
+    }
+
+    .navMenu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+        background:rgb(124, 89, 89) ;
+        width: 100%;
+        height: 25vh;
+        right: 0;
+    }
+
+    .navMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .navMenu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+
+    .galeriaTitulo h1 {
+        font-size: 2em;
+    }
+
+    .pieDePagina .redes {
         display: flex;
         flex-direction: row;
         font-size: 0.8em;
     }
-    
-    .pieDePagina picture{
-        display:none
+
+    .pieDePagina picture {
+        display: none
     }
-        
-    .links, .informacion{
+
+    .links,
+    .informacion {
         display: none;
     }
-    
-    .redes h4{
+
+    .redes h4 {
         display: none;
     }
-    
-    .redes a{
-        margin-right: 1.1em ;
+
+    .redes a {
+        margin-right: 1.1em;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width:1279px){
+@media screen and (min-width: 768px) and (max-width:1279px) {
 
-    #galeria{
+    #galeria {
         display: grid;
         grid-template-columns: repeat(3, 220px);
         grid-template-rows: repeat(9, 400px);
         grid-template-areas:
-        "img1  img1  img2"
-        "img3  img3  img3"
-        "img4  img4  img5"
-        "img6  img6  img6"
-        "img8  img7  img7"
-        "img11 img11 img11"
-        "img9  img10 img10"
-        "img12 img12 img12"
-        "img13 img14 img14";
+            "img1  img1  img2"
+            "img3  img3  img3"
+            "img4  img4  img5"
+            "img6  img6  img6"
+            "img8  img7  img7"
+            "img11 img11 img11"
+            "img9  img10 img10"
+            "img12 img12 img12"
+            "img13 img14 img14";
     }
 
-    .galeriaTitulo h1{
-        font-size:3em;
+    .galeriaTitulo h1 {
+        font-size: 3em;
     }
 }
 
-@media screen and (min-width: 1280px) and (max-width:1824px){
+@media screen and (min-width: 1280px) and (max-width:1824px) {
 
-    #galeria{
+    #galeria {
         display: grid;
         grid-template-columns: repeat(4, 300px);
         grid-template-rows: repeat(5, 300px);
         grid-template-areas:
-        "img1  img9  img2  img11"
-        "img1  img6  img2  img5"
-        "img10 img8  img12 img5"
-        "img7  img8  img14 img4"
-        "img3  img13 img13 img4";
+            "img1  img9  img2  img11"
+            "img1  img6  img2  img5"
+            "img10 img8  img12 img5"
+            "img7  img8  img14 img4"
+            "img3  img13 img13 img4";
     }
 }
 
@@ -1505,31 +1792,9 @@ footer{
 
 /*CONTACTO*/
 
-#contacto{
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: repeat(3, autofill);
-    grid-template-areas: 
-    "header header header"
-    "contacto contacto contacto"
-    "footer footer footer";
-}
-
-#contacto header{
-    grid-area: header;
-}
-
-#contacto main{
-    grid-area: contacto;
-}
-
-#contacto footer{
-    grid-area: footer;
-}
-
 /*Posicionamiento al titulo*/
 
-.contactoTitulo{ 
+.contactoTitulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1538,7 +1803,7 @@ footer{
 
 /*Estilo al titulo*/
 
-.contactoTitulo h1{  
+.contactoTitulo h1 {
     font-size: 4em;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
@@ -1549,58 +1814,60 @@ footer{
 
 /*FORMULARIO CONTACTO*/
 
-.contenedorContacto{ /*Posicionamiento al formulario*/
+.contenedorContacto {
+    /*Posicionamiento al formulario*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.contenedorContacto{
+.contenedorContacto {
     margin-bottom: 8em;
 }
 
 /*Estilo a los cajones del formulario*/
 
-.contenedorContacto form{ 
-    width: 500px;         /*Lo pase a pixeles porque en em se distribuye de otra manera la caja padre*/
+.contenedorContacto form {
+    width: 500px;
+    /*Lo pase a pixeles porque en em se distribuye de otra manera la caja padre*/
     padding: 1em;
 
     border-radius: 0.5em;
     box-shadow: 6px 3px 8px 1px #000000;
-    background:linear-gradient(135deg, #e9eced 0%,#fffcfc 100%);
+    background: linear-gradient(135deg, #e9eced 0%, #fffcfc 100%);
 }
 
 /*Estilo a todo el texto del formulario*/
 
-.contenedorContacto form{ 
+.contenedorContacto form {
     font-size: 1.2em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #000000;
 }
 
 /*Posicionamiento entre los divs*/
 
-.contenedorContacto div{ 
+.contenedorContacto div {
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
 }
 
-.contenedorContacto label{
+.contenedorContacto label {
     margin-bottom: 0.5em;
 }
 
 /*Alto y ancho de las cajas de texto*/
 
-.contenedorContacto input{ 
+.contenedorContacto input {
     width: 450px;
     height: 40px;
 }
 
 /*Se modificaron los valores de las cajas de texto */
 
-.contenedorContacto input{ 
+.contenedorContacto input {
     font-size: 1.0em;
     border-radius: 0.3em;
     outline: none;
@@ -1609,14 +1876,14 @@ footer{
 
 /*Alto y ancho de la caja de comentario*/
 
-.contenedorContacto textarea{ 
+.contenedorContacto textarea {
     width: 450px;
     height: 90px;
 }
 
 /*Se modificaron los valores de la caja comentario*/
 
-.contenedorContacto textarea{ 
+.contenedorContacto textarea {
     font-size: 1.2em;
     border-radius: 0.3em;
     resize: none;
@@ -1626,12 +1893,12 @@ footer{
 
 /*Estilos al boton*/
 
-.contenedorContacto button{
-    font-size  : 0.8em;
+.contenedorContacto button {
+    font-size: 0.8em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.contenedorContacto button{
+.contenedorContacto button {
     display: block;
     width: 450px;
     margin: 10px;
@@ -1644,8 +1911,8 @@ footer{
     box-shadow: 0 0 20px #eeeeee;
     border-radius: 10px;
     background-size: 200% auto;
-    background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%);
-    
+    background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8 51%, #757F9A 100%);
+
     transition: 0.5s;
 }
 
@@ -1655,221 +1922,328 @@ footer{
     text-decoration: none;
 }
 
+#contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, autofill);
+    grid-template-areas:
+        "header header header"
+        "contacto contacto contacto"
+        "footer footer footer";
+}
+
+#contacto header {
+    grid-area: header;
+}
+
+#contacto main {
+    grid-area: contacto;
+}
+
+#contacto footer {
+    grid-area: footer;
+}
+
 /*CONTACTO MEDIA QUERIES*/
 
-@media screen and (min-width:320px) and (max-width:479px){
-    
-    #contacto{
+@media screen and (min-width:320px) and (max-width:479px) {
+
+    #contacto {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(3, autofill);
-        grid-template-areas: 
-        "header"
-        "contacto"
-        "footer";
+        grid-template-areas:
+            "header"
+            "contacto"
+            "footer";
     }
 
-    .header{
+    .header {
         height: 100px;
     }
 
-    .header > nav{
+    .header>nav {
         font-size: 0.7em;
     }
 
-    .logo img{
+    .logo img {
         width: 50px;
     }
 
-    .contactoTitulo h1{
+    .checkBoton{
+        display: block;
+    }
+
+    .menuIcon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor:pointer;
+    }
+
+    .navMenu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+        background:rgb(124, 89, 89) ;
+        width: 100%;
+        height: 25vh;
+        right: 0;
+    }
+
+    .navMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .navMenu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+
+    .contactoTitulo h1 {
         font-size: 2em;
     }
 
-    .contenedorContacto form{
+    .contenedorContacto form {
         width: 90%;
     }
 
-    .contenedorContacto input{
+    .contenedorContacto input {
         width: 100%;
     }
 
-    .contenedorContacto textarea{
+    .contenedorContacto textarea {
         width: 100%;
     }
 
-    .contenedorContacto button{
+    .contenedorContacto button {
         width: 90%;
     }
 
-    .pieDePagina .redes{
+    .pieDePagina .redes {
         display: flex;
         flex-direction: row;
         font-size: 0.8em;
     }
 
-    .pieDePagina picture{
-        display:none
+    .pieDePagina picture {
+        display: none
     }
 
-    .links, .informacion{
+    .links,
+    .informacion {
         display: none;
     }
 
-    .redes h4{
+    .redes h4 {
         display: none;
     }
 
-    .redes a{
-        margin-right: 1.1em ;
+    .redes a {
+        margin-right: 1.1em;
     }
 
-    .copyright h5{
-        font-size:0.8em;
+    .copyright h5 {
+        font-size: 0.8em;
     }
 
-    .copyright p{
+    .copyright p {
         font-size: 0.6em;
     }
 }
 
-@media screen and (min-width:480px) and (max-width:767px){
+@media screen and (min-width:480px) and (max-width:767px) {
 
-    #contacto{
+    #contacto {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, autofill);
         grid-template-areas:
-        "header header"
-        "contacto contacto"
-        "footer footer";
+            "header header"
+            "contacto contacto"
+            "footer footer";
     }
 
-    .contactoTitulo h1{
+    .checkBoton{
+        display: block;
+    }
+
+    .menuIcon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor:pointer;
+    }
+
+    .navMenu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+        background:rgb(124, 89, 89) ;
+        width: 100%;
+        height: 25vh;
+        right: 0;
+    }
+
+    .navMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .navMenu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+
+    .contactoTitulo h1 {
         font-size: 3em;
     }
 
-    .contenedorContacto form{
+    .contenedorContacto form {
         width: 90%;
     }
 
-    .contenedorContacto, label button{
+    .contenedorContacto,
+    label button {
         font-size: 0.8em;
     }
 
-    .contenedorContacto input{
+    .contenedorContacto input {
         width: 100%;
     }
 
-    .contenedorContacto textarea{
+    .contenedorContacto textarea {
         width: 100%;
     }
 
-    .contenedorContacto button{
+    .contenedorContacto button {
         width: 95%;
     }
 
-    .pieDePagina > picture{
+    .pieDePagina>picture {
         display: none;
     }
 
-    .pieDePagina .redes{
+    .pieDePagina .redes {
         display: flex;
         flex-direction: row;
         font-size: 1em;
     }
 
-    .pieDePagina picture{
-        display:none
+    .pieDePagina picture {
+        display: none
     }
 
-    .links, .informacion{
+    .links,
+    .informacion {
         display: none;
     }
 
-    .redes h4{
+    .redes h4 {
         display: none;
     }
 
-    .redes a{
-        margin-right: 1.2em ;
+    .redes a {
+        margin-right: 1.2em;
     }
 
-    .copyright h5{
-        font-size:0.8em;
+    .copyright h5 {
+        font-size: 0.8em;
     }
 
-    .copyright p{
+    .copyright p {
         font-size: 0.6em;
     }
 }
 
-@media screen and (min-width:768px) and (max-width:820px){
+@media screen and (min-width:768px) and (max-width:820px) {
 
-        #contacto{
+    #contacto {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, autofill);
         grid-template-areas:
-        "header header header"
-        "contacto contacto contacto"
-        "footer footer footer";
+            "header header header"
+            "contacto contacto contacto"
+            "footer footer footer";
     }
 
-    .contactoTitulo h1{
+    .contactoTitulo h1 {
         font-size: 3em;
     }
 
-    .contenedorContacto form{
+    .contenedorContacto form {
         width: 90%;
     }
 
-    .contenedorContacto, label button{
+    .contenedorContacto,
+    label button {
         font-size: 0.8em;
     }
 
-    .contenedorContacto input{
+    .contenedorContacto input {
         width: 100%;
     }
 
-    .contenedorContacto textarea{
+    .contenedorContacto textarea {
         width: 100%;
     }
 
-    .contenedorContacto button{
+    .contenedorContacto button {
         width: 95%;
     }
 
-    .pieDePagina > picture{
+    .pieDePagina>picture {
         display: none;
     }
 
-    .pieDePagina .redes{
+    .pieDePagina .redes {
         display: flex;
         flex-direction: row;
         font-size: 1em;
     }
 
-    .pieDePagina picture{
-        display:none
+    .pieDePagina picture {
+        display: none
     }
 
-    .links, .informacion{
+    .links,
+    .informacion {
         display: none;
     }
 
-    .redes h4{
+    .redes h4 {
         display: none;
     }
 
-    .redes a{
-        margin-right: 1.2em ;
+    .redes a {
+        margin-right: 1.2em;
     }
 
-    .copyright h5{
-        font-size:0.8em;
+    .copyright h5 {
+        font-size: 0.8em;
     }
 
-    .copyright p{
+    .copyright p {
         font-size: 0.6em;
     }
 }
