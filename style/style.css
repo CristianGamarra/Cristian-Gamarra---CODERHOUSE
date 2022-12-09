@@ -23,9 +23,7 @@ header {
     background-color: #F8EDE3;
 }
 
-/*(HEADER) LOGO*/
-
-/*Ancho y animacion al logo*/
+/*LOGO*/
 
 .logo img {
     width: 5em;
@@ -37,7 +35,7 @@ header {
     cursor: pointer;
 }
 
-/*(HEADER) NAVBAR*/
+/*NAVBAR*/
 
 header{
     display: flex;
@@ -61,11 +59,15 @@ header > nav ul li a:hover {
     cursor: pointer;
 }
 
+/*Deshabilita el svg en desktop*/
+
 .menuIcon, #check{
     display: none;
 }
 
-/*(MAIN) BANNER*/
+/*----------------------------------------------------*/
+
+/*INDEX*/
 
 main {
     background-color: #DFD3C3;
@@ -87,10 +89,7 @@ main {
     align-items: center;
 }
 
-/*Estilo de titulo y parrafo*/
-
-.bannerTitulo,
-.bannerParrafo {
+.bannerTitulo, .bannerParrafo {
     font-family: 'Arimo', sans-serif;;
     color: #ffffffff;
     margin: 0.3em;
@@ -98,43 +97,32 @@ main {
 }
 
 .bannerTitulo {
-    /*Tamaño de fuente del titulo*/
-    font-size: 4em ;
+    font-size: 4em;
 }
 
 .bannerParrafo {
-    /*Tamaño de fuente del parrafo*/
     font-size: 2em;
 }
 
-/*----------------------------------------------------*/
-
-/*INDEX*/
-
 .contenedor {
-    /* Se da un alto y un ancho junto con un color de fondo*/
     height: 20em;
     width: auto;
     background-color: #D0B8A8;
 }
 
 .contenedor {
-    /*Se utiliza para posicionar el elemento*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contenedorTitulo,
-.contenedorParrafo {
-    /*Se alinean ambos textos y se le da un ancho*/
+.contenedorTitulo, .contenedorParrafo {
     text-align: center;
     width: 50em;
 }
 
 .contenedorTitulo {
-    /*Estilo del titulo*/
     font-size: 2em;
     font-family: 'Roboto Condensed', sans-serif;;
     color: #000000;
@@ -142,38 +130,30 @@ main {
 }
 
 .contenedorParrafo {
-    /*Estilo del parrafo*/
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;;
     color: #000000;
 }
 
-/*----------------------------------------------------*/
-
 .articulo {
-    /*Contenedor articulo*/
     height: 20em;
     width: auto;
     background-color: #DFD3C3;
 }
 
 .articulo {
-    /*Se utiliza para posicionar los elementos*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.articuloTitulo,
-.articuloParrafo {
-    /*Se alinean ambos textos y se le da un ancho*/
+.articuloTitulo, .articuloParrafo {
     text-align: center;
     width: 50em;
 }
 
 .articuloTitulo {
-    /*Estilo del titulo*/
     font-size: 2em;
     font-family: 'Roboto Condensed', sans-serif;
     color: #000000;
@@ -181,15 +161,12 @@ main {
 }
 
 .articuloParrafo {
-    /*Estilo del parrafo*/
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     color: #000000;
 }
 
-/*----------------------------------------------------*/
-
-/*INDEX GRID*/
+/*Index grid*/
 
 #index {
     display: grid;
@@ -213,7 +190,7 @@ main {
     grid-area: footer;
 }
 
-/*INDEX MEDIA QUERIES*/
+/*Index Media Queries*/
 
 @media screen and (min-width:320px) and (max-width:479px) {
     #index {
@@ -257,7 +234,7 @@ main {
         left: 100%;
         background:rgb(124, 89, 89) ;
         width: 100%;
-        height: 25vh;
+        height: 20vh;
         right: 0;
     }
 
@@ -268,9 +245,9 @@ main {
         margin: 0;
     }
 
-    .navMenu ul li:last-child{
+    .navMenu ul li:nth-last-child(n + 1){
         background: none;
-        padding: 1rem;
+        padding: 1.1em;
     }
 
     #check:checked ~ ul{
@@ -291,7 +268,7 @@ main {
     }
 
     .contenedorTitulo {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .contenedorParrafo {
@@ -300,7 +277,7 @@ main {
     }
 
     .articulo .articuloTitulo {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .articuloParrafo {
@@ -362,7 +339,7 @@ main {
         left: 100%;
         background:rgb(124, 89, 89) ;
         width: 100%;
-        height: 25vh;
+        height: 20vh;
         right: 0;
     }
 
@@ -373,9 +350,9 @@ main {
         margin: 0;
     }
 
-    .navMenu ul li:last-child{
+    .navMenu ul li:nth-last-child(n + 1){
         background: none;
-        padding: 1rem;
+        padding: 1.1em;
     }
 
     #check:checked ~ ul{
@@ -477,115 +454,17 @@ main {
     }
 }
 
-/*-------------------------------------------*/
-
-/*FOOTER*/
-
-footer {
-    background-color: #7D6E83;
-}
-
-.pieDePagina {
-    /*Se utilizo para posicionar el contenido*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 2em;
-}
-
-.logoFooter {
-    /*Ancho del logo*/
-    width: 8em;
-}
-
-/*(FOOTER) LINKS*/
-
-.links h4 { /*Estilo al titulo de links*/
-
-    font-size: 0.9em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif !important;;
-    margin-bottom: 0.5em;
-}
-
-.links ul li a {
-    /*Estilo a la lista links*/
-    font-size: 0.9em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    color: #000000;
-}
-
-.links li {
-    /*Margin bottom entre cada lista*/
-    margin-bottom: 1em;
-}
-
-/*(FOOTER) REDES*/
-
-.redes {
-    /*Se utilizo para posicionar los iconos de las redes sociales*/
-    display: flex;
-    flex-direction: column;
-}
-
-.redes h4 {
-    font-size: 0.9em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 0.5em;
-    color: #000000;
-}
-
-.redes a {
-    font-size: 0.9em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #000000;
-    margin-bottom: 1em;
-}
-
-/*(FOOTER) INFORMACION*/
-
-.informacion h4 {
-    /*Estilo al titulo de informacion*/
-    font-size: 0.9em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 0.5em;
-    color: #000000;
-}
-
-.informacion ul li {
-    /*Estilo a la lista informacion*/
-    font-size: 0.9em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #000000;
-}
-
-.informacion li {
-    /*Margin bottom entre cada lista*/
-    margin-bottom: 1em;
-}
-
-/*(FOOTER) COPYRIGHT*/
-
-.copyright {
-    /*Se utilizo para posicionar el texto*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 /*----------------------------------------------------*/
 
-/*Sobre nosotros*/
+/*NOSOTROS*/
 
 .nosotrosTitulo {
-    /*Se utilizo para posicionar al titulo*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .nosotrosTitulo h1 {
-    /*Al titulo se le aplico estetica*/
     font-size: 4em;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
@@ -593,6 +472,8 @@ footer {
     color: #ffffffff;
     margin: 2em;
 }
+
+/*CARDS*/
 
 .cards {
     display: flex;
@@ -602,7 +483,7 @@ footer {
     width: 100%;
 }
 
-/*CARDS SOBRE NOSOTROS*/
+/*CARD1*/
 
 .cards .cardDerecha {
     background-color: #ffffff;
@@ -636,6 +517,8 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*CARD2*/
+
 .cards .cardIzquierda {
     background-color: #ffffff;
     width: 45em;
@@ -668,179 +551,9 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 
-/*SOBRE NOSOTROS (SERVICIOS)*/
+/*Nosotros Grid*/
 
-.serviciosTitulo {
-    /*Se utilizo para posicionar al titulo*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.serviciosTitulo>h3 {
-    /*Se utilizo para dar estetica al titulo*/
-    font-size: 4em;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
-    text-shadow: 2px 3px #000000;
-    color: #ffffffff;
-    margin: 2em;
-}
-
-/*CARDS SERVICIOS*/
-
-.cardsServicios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.cardsServicios .card-1 {
-    position: relative;
-    background-color: #ffffff;
-    width: 50em;
-    border-radius: 8px;
-    box-sizing: border-box;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25s ease-in;
-
-}
-
-.cardsServicios .card-1:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.cardsServicios .card-1 img {
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-}
-
-.cardsServicios .card-1 h4 {
-    font-size: 2em;
-    font-family: 'Roboto Condensed', sans-serif;
-    padding-top: 30px;
-}
-
-.cardsServicios .card-1 p {
-    width: 800px;
-    padding: 1em;
-    font-size: 1.3em;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/*-------------------*/
-
-.cardsServicios .card-2 {
-    background-color: #ffffff;
-    width: 50em;
-    height: 49em;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25s ease-in;
-}
-
-.cardsServicios .card-2:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.cardsServicios .card-2 img {
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-}
-
-.cardsServicios .card-2 h4 {
-    font-size: 2em;
-    font-family: 'Roboto Condensed', sans-serif;
-    padding-top: 30px;
-}
-
-.cardsServicios .card-2 p {
-    width: 800px;
-    padding: 1em;
-    font-size: 1.3em;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/*-------------------*/
-
-.cardsServicios .card-3 {
-    background-color: #ffffff;
-    width: 50em;
-    height: 46em;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25s ease-in;
-}
-
-.cardsServicios .card-3:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.cardsServicios .card-3 img {
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-}
-
-.cardsServicios .card-3 h4 {
-    font-size: 2em;
-    font-family: 'Roboto Condensed', sans-serif;
-    padding-top: 30px;
-}
-
-.cardsServicios .card-3 p {
-    padding: 1em;
-    font-size: 1.3em;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/*-------------------*/
-
-.cardsServicios .card-4 {
-    background-color: #ffffff;
-    width: 50em;
-    height: 46em;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25s ease-in;
-}
-
-.cardsServicios .card-4:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.cardsServicios .card-4 img {
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-}
-
-.cardsServicios .card-4 h4 {
-    font-size: 2em;
-    font-family: 'Roboto Condensed', sans-serif;
-    padding-top: 40px;
-}
-
-.cardsServicios .card-4 p {
-    width: 800px;
-    padding: 1em;
-    font-size: 1.3em;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#sobreNosotros {
+#nosotros {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, autofill);
@@ -854,7 +567,7 @@ footer {
     grid-area: header;
 }
 
-.sobreNosotros {
+.nosotros {
     grid-area: nosotros;
 }
 
@@ -862,7 +575,7 @@ footer {
     grid-area: footer;
 }
 
-/*SOBRE NOSOTROS MEDIA QUERIES*/
+/*Nosotros Media Queries*/
 
 @media screen and (min-width: 320px) and (max-width:479px) {
 
@@ -907,7 +620,7 @@ footer {
         left: 100%;
         background:rgb(124, 89, 89) ;
         width: 100%;
-        height: 25vh;
+        height: 20vh;
         right: 0;
     }
 
@@ -918,23 +631,22 @@ footer {
         margin: 0;
     }
 
-    .navMenu ul li:last-child{
+    .navMenu ul li:nth-last-child(n + 1){
         background: none;
-        padding: 1rem;
+        padding: 1.1em;
     }
 
     #check:checked ~ ul{
         left: 0;
         transition: all .25s;
     }
-
     .nosotrosTitulo,
     h1 {
         font-size: 0.4em;
         margin: 1em;
     }
 
-    /*CARDS SOBRE NOSOTROS*/
+    /*CARDS*/
 
     .cards .cardDerecha {
         width: 18em;
@@ -950,6 +662,10 @@ footer {
     .cards .cardDerecha p {
         padding: 1.5em;
         font-size: 0.7em;
+    }
+
+    .cards .cardDerecha:hover{
+        transform: none;
     }
 
     .cards .cardIzquierda {
@@ -968,73 +684,10 @@ footer {
         font-size: 0.7em;
     }
 
-    .serviciosTitulo,
-    h3 {
-        font-size: 0.37em;
-        margin: 1em;
+    .cards .cardIzquierda:hover{
+        transform: none;
     }
 
-    /*CARDS SERVICIOS*/
-
-    .cardsServicios .card-1 {
-        height: fit-content;
-    }
-
-    .cardsServicios .card-1>h4 {
-        font-size: 1em;
-        padding-top: 5px;
-    }
-
-    .cardsServicios .card-1 p {
-        width: fit-content;
-        padding: 1.5em;
-        font-size: 0.7em;
-    }
-
-    .cardsServicios .card-2 {
-        height: fit-content;
-    }
-
-    .cardsServicios .card-2>h4 {
-        font-size: 1em;
-        padding-top: 5px;
-    }
-
-    .cardsServicios .card-2 p {
-        width: fit-content;
-        padding: 1.5em;
-        font-size: 0.7em;
-    }
-
-    .cardsServicios .card-3 {
-        height: fit-content;
-    }
-
-    .cardsServicios .card-3>h4 {
-        font-size: 1em;
-        padding-top: 5px;
-    }
-
-    .cardsServicios .card-3 p {
-        width: fit-content;
-        padding: 1.5em;
-        font-size: 0.7em;
-    }
-
-    .cardsServicios .card-4 {
-        height: fit-content;
-    }
-
-    .cardsServicios .card-4>h4 {
-        font-size: 1em;
-        padding-top: 5px;
-    }
-
-    .cardsServicios .card-4 p {
-        width: fit-content;
-        padding: 1.5em;
-        font-size: 0.7em;
-    }
 
     .pieDePagina .redes {
         display: flex;
@@ -1069,7 +722,7 @@ footer {
         grid-template-areas:
             "header header"
             "nosotros nosotros"
-            "footer nosotros";
+            "footer footer";
     }
 
     .header {
@@ -1103,7 +756,7 @@ footer {
         left: 100%;
         background:rgb(124, 89, 89) ;
         width: 100%;
-        height: 25vh;
+        height: 20vh;
         right: 0;
     }
 
@@ -1114,9 +767,9 @@ footer {
         margin: 0;
     }
 
-    .navMenu ul li:last-child{
+    .navMenu ul li:nth-last-child(n + 1){
         background: none;
-        padding: 1rem;
+        padding: 1.1em;
     }
 
     #check:checked ~ ul{
@@ -1130,12 +783,12 @@ footer {
         margin: 5px;
     }
 
-    /*CARDS SOBRE NOSOTROS*/
+    /*CARDS*/
 
     .cards .cardDerecha {
         width: 28em;
         height: 28em;
-        margin: 5px;
+        margin-bottom: 5em;
     }
 
     .cards .cardDerecha h2 {
@@ -1146,6 +799,10 @@ footer {
     .cards .cardDerecha p {
         padding: 1.5em;
         font-size: 0.8em;
+    }
+
+    .cards .cardDerecha:hover{
+        transform: none;
     }
 
     .cards .cardIzquierda {
@@ -1164,76 +821,8 @@ footer {
         font-size: 0.8em;
     }
 
-    .serviciosTitulo,
-    h3 {
-        font-size: 0.5em;
-        margin: 5px;
-    }
-
-    /*CARDS SERVICIOS*/
-
-    .cardsServicios .card-1 {
-        width: 27em;
-        height: 29em;
-    }
-
-    .cardsServicios .card-1>h4 {
-        font-size: 1.5em;
-        padding-top: 5px;
-    }
-
-    .cardsServicios .card-1 p {
-        width: fit-content;
-        padding: 1em;
-        font-size: 0.8em;
-    }
-
-    .cardsServicios .card-2 {
-        width: 27em;
-        height: 27em;
-    }
-
-    .cardsServicios .card-2>h4 {
-        font-size: 1.5em;
-        padding-top: 5px;
-    }
-
-    .cardsServicios .card-2 p {
-        width: fit-content;
-        padding: 1.5em;
-        font-size: 0.8em;
-    }
-
-    .cardsServicios .card-3 {
-        width: 28em;
-        height: 28em;
-    }
-
-    .cardsServicios .card-3>h4 {
-        font-size: 1.5em;
-        padding-top: 5px;
-    }
-
-    .cardsServicios .card-3 p {
-        width: fit-content;
-        padding: 1.5em;
-        font-size: 0.8em;
-    }
-
-    .cardsServicios .card-4 {
-        width: 26em;
-        height: 26em;
-    }
-
-    .cardsServicios .card-4>h4 {
-        font-size: 1.5em;
-        padding-top: 5px;
-    }
-
-    .cardsServicios .card-4 p {
-        width: fit-content;
-        padding: 1.5em;
-        font-size: 0.8em;
+    .cards .cardIzquierda:hover{
+        transform: none;
     }
 
     .pieDePagina .redes {
@@ -1258,7 +847,6 @@ footer {
     .redes a {
         margin-right: 1.1em;
     }
-
 }
 
 @media screen and (min-width: 768px) and (max-width:1024px) {
@@ -1291,11 +879,12 @@ footer {
         margin: 5px;
     }
 
-    /*CARDS SOBRE NOSOTROS*/
+    /*CARDS*/
 
     .cards .cardDerecha {
         width: 40em;
         margin-bottom: 20px;
+        margin-bottom: 5em;
     }
 
     .cards .cardDerecha h2 {
@@ -1323,75 +912,370 @@ footer {
         font-size: 1.1em;
     }
 
-    .serviciosTitulo,
-    h3 {
-        font-size: 0.8em;
-        margin: 5px;
+    .pieDePagina picture {
+        display: none
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width:1824px) {
+
+    #sobreNosotros {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, autofill);
+        grid-template-areas:
+            "header   header   header"
+            "nosotros nosotros nosotros"
+            "footer   footer   footer";
+    }
+}
+
+/*----------------------------------------------------*/
+
+/*SERVICIOS*/
+
+.serviciosTitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviciosTitulo>h1 {
+    font-size: 4em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 3px #000000;
+    color: #ffffffff;
+    margin: 2em;
+}
+
+/*CARDS*/
+
+.cardsServicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardsServicios .card-1 {
+    position: relative;
+    background-color: #ffffff;
+    width: 50em;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s ease-in;
+
+}
+
+/*CARD1*/
+
+.cardsServicios .card-1:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardsServicios .card-1 img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.cardsServicios .card-1 h2 {
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 30px;
+}
+
+.cardsServicios .card-1 p {
+    width: 800px;
+    padding: 1em;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*CARD2*/
+
+.cardsServicios .card-2 {
+    background-color: #ffffff;
+    width: 50em;
+    height: 49em;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s ease-in;
+}
+
+.cardsServicios .card-2:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardsServicios .card-2 img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.cardsServicios .card-2 h2 {
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 30px;
+}
+
+.cardsServicios .card-2 p {
+    width: 800px;
+    padding: 1em;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*CARD3*/
+
+.cardsServicios .card-3 {
+    background-color: #ffffff;
+    width: 50em;
+    height: 46em;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s ease-in;
+}
+
+.cardsServicios .card-3:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardsServicios .card-3 img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.cardsServicios .card-3 h2 {
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 30px;
+}
+
+.cardsServicios .card-3 p {
+    padding: 1em;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*CARD 4*/
+
+.cardsServicios .card-4 {
+    background-color: #ffffff;
+    width: 50em;
+    height: 46em;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.904);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s ease-in;
+}
+
+.cardsServicios .card-4:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardsServicios .card-4 img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.cardsServicios .card-4 h2 {
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 40px;
+}
+
+.cardsServicios .card-4 p {
+    width: 800px;
+    padding: 1em;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Servicios Grid*/
+
+#servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, autofill);
+    grid-template-areas:
+        "header    header    header"
+        "servicios servicios servicios"
+        "footer    footer    footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.servicios {
+    grid-area: servicios;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/*Servicios Media Queries*/
+
+@media screen and (min-width: 320px) and (max-width:479px) {
+
+    #servicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, autofill);
+        grid-template-areas:
+            "header"
+            "servicios"
+            "footer";
     }
 
-    /*CARDS SERVICIOS*/
+    .header {
+        height: 100px;
+    }
+
+    .header>nav {
+        font-size: 0.7em;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .checkBoton{
+        display: block;
+    }
+
+    .menuIcon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor:pointer;
+    }
+
+    .navMenu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+        background:rgb(124, 89, 89) ;
+        width: 100%;
+        height: 20vh;
+        right: 0;
+    }
+
+    .navMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .navMenu ul li:nth-last-child(n + 1){
+        background: none;
+        padding: 1.1em;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+
+    .serviciosTitulo,
+    h1 {
+        font-size: 0.4em;
+        margin: 1em;
+    }
+
+    /*CARDS*/
 
     .cardsServicios .card-1 {
-        width: 40em;
+        height: fit-content;
     }
 
-    .cardsServicios .card-1>h4 {
-        font-size: 2em;
+    .cardsServicios .card-1>h2 {
+        font-size: 1em;
         padding-top: 5px;
     }
 
     .cardsServicios .card-1 p {
         width: fit-content;
         padding: 1.5em;
-        font-size: 1.1em;
+        font-size: 0.7em;
+    }
+
+    .cardsServicios .card-1:hover{
+        transform: none;
     }
 
     .cardsServicios .card-2 {
-        width: 40em;
         height: fit-content;
     }
 
-    .cardsServicios .card-2>h4 {
-        font-size: 2em;
+    .cardsServicios .card-2>h2 {
+        font-size: 1em;
         padding-top: 5px;
     }
 
     .cardsServicios .card-2 p {
         width: fit-content;
         padding: 1.5em;
-        font-size: 1.1em;
+        font-size: 0.7em;
+    }
+
+    .cardsServicios .card-2:hover{
+        transform: none;
     }
 
     .cardsServicios .card-3 {
-        width: 40em;
         height: fit-content;
     }
 
-    .cardsServicios .card-3>h4 {
-        font-size: 2em;
+    .cardsServicios .card-3>h2 {
+        font-size: 1em;
         padding-top: 5px;
     }
 
     .cardsServicios .card-3 p {
         width: fit-content;
         padding: 1.5em;
-        font-size: 1.1em;
+        font-size: 0.7em;
+    }
+
+    .cardsServicios .card-3:hover{
+        transform: none;
     }
 
     .cardsServicios .card-4 {
-        width: 40em;
         height: fit-content;
     }
 
-    .cardsServicios .card-4>h4 {
-        font-size: 2em;
+    .cardsServicios .card-4>h2 {
+        font-size: 1em;
         padding-top: 5px;
     }
 
     .cardsServicios .card-4 p {
         width: fit-content;
         padding: 1.5em;
-        font-size: 1.1em;
+        font-size: 0.7em;
+    }
+
+    .cardsServicios .card-4:hover{
+        transform: none;
     }
 
     .pieDePagina .redes {
@@ -1418,25 +1302,287 @@ footer {
     }
 }
 
-@media screen and (min-width: 1280px) and (max-width:1824px) {
+@media screen and (min-width: 480px) and (max-width:767px) {
 
-    #sobreNosotros {
+    #servicios {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, autofill);
         grid-template-areas:
-            "header   header   header"
-            "nosotros nosotros nosotros"
-            "footer   footer   footer";
+            "header    header"
+            "servicios servicios"
+            "footer    footer";
     }
+
+    .header {
+        height: 100px;
+    }
+
+    .header>nav {
+        font-size: 0.7em;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .checkBoton{
+        display: block;
+    }
+
+    .menuIcon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor:pointer;
+    }
+
+    .navMenu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+        background:rgb(124, 89, 89) ;
+        width: 100%;
+        height: 20vh;
+        right: 0;
+    }
+
+    .navMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .navMenu ul li:nth-last-child(n + 1){
+        background: none;
+        padding: 1.1em;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+
+    .serviciosTitulo,
+    h1 {
+        text-align: center;
+        font-size: 0.5em;
+        margin: 5px;
+    }
+
+    /*CARDS*/
+
+    .cardsServicios{
+        padding-bottom: 3em;
+    }
+
+    .cardsServicios .card-1 {
+        height: fit-content;
+    }
+
+    .cardsServicios .card-1>h2 {
+        font-size: 1.5em;
+        padding-top: 5px;
+    }
+
+    .cardsServicios .card-1 p {
+        width: fit-content;
+        padding: 1em;
+        font-size: 0.8em;
+    }
+
+    .cardsServicios .card-1:hover{
+        transform: none;
+    }
+
+    .cardsServicios .card-2 {
+        height: fit-content;
+    }
+
+    .cardsServicios .card-2>h2 {
+        font-size: 1.5em;
+        padding-top: 5px;
+    }
+
+    .cardsServicios .card-2 p {
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 0.8em;
+    }
+
+    .cardsServicios .card-2:hover{
+        transform: none;
+    }
+
+    .cardsServicios .card-3 {
+        height: fit-content;
+    }
+
+    .cardsServicios .card-3>h2 {
+        font-size: 1.5em;
+        padding-top: 5px;
+    }
+
+    .cardsServicios .card-3 p {
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 0.8em;
+    }
+
+    .cardsServicios .card-3:hover{
+        transform: none;
+    }
+
+    .cardsServicios .card-4 {
+        height: fit-content;
+    }
+
+    .cardsServicios .card-4>h2 {
+        font-size: 1.5em;
+        padding-top: 5px;
+    }
+
+    .cardsServicios .card-4 p {
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 0.8em;
+    }
+
+    .cardsServicios .card-4:hover{
+        transform: none;
+    }
+
+    .pieDePagina .redes {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8em;
+    }
+
+    .pieDePagina picture {
+        display: none
+    }
+
+    .links,
+    .informacion {
+        display: none;
+    }
+
+    .redes h4 {
+        display: none;
+    }
+
+    .redes a {
+        margin-right: 1.1em;
+    }
+
 }
 
+@media screen and (min-width: 768px) and (max-width:1024px) {
+
+    #servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, autofill);
+        grid-template-areas:
+            "header header"
+            "servicios servicios"
+            "footer footer";
+    }
+
+    .header {
+        height: 100px;
+    }
+
+    .header>nav {
+        font-size: 0.7em;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .serviciosTitulo,
+    h1 {
+        font-size: 0.8em;
+        margin: 5px;
+    }
+
+    /*CARDS*/
+
+    .cardsServicios .card-1 {
+        width: 40em;
+    }
+
+    .cardsServicios .card-1>h2 {
+        font-size: 2em;
+        padding-top: 5px;
+    }
+
+    .cardsServicios .card-1 p {
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .cardsServicios .card-2 {
+        width: 40em;
+        height: fit-content;
+    }
+
+    .cardsServicios .card-2>h2 {
+        font-size: 2em;
+        padding-top: 5px;
+    }
+
+    .cardsServicios .card-2 p {
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .cardsServicios .card-3 {
+        width: 40em;
+        height: fit-content;
+    }
+
+    .cardsServicios .card-3>h2 {
+        font-size: 2em;
+        padding-top: 5px;
+    }
+
+    .cardsServicios .card-3 p {
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .cardsServicios .card-4 {
+        width: 40em;
+        height: fit-content;
+    }
+
+    .cardsServicios .card-4>h2 {
+        font-size: 2em;
+        padding-top: 5px;
+    }
+
+    .cardsServicios .card-4 p {
+        width: fit-content;
+        padding: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .pieDePagina picture {
+        display: none
+    }
+}
 
 /*----------------------------------------------------*/
 
 /*GALERIA*/
-
-/*Se utilizo para posicionar al titulo de la galeria*/
 
 .galeriaTitulo {
     display: flex;
@@ -1444,20 +1590,16 @@ footer {
     align-items: center;
 }
 
-/*Al titulo se le asigno estilo en su fuente*/
-
 .galeriaTitulo>h1 {
     font-size: 4em;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     color: #ffffff;
     text-shadow: 2px 3px #000000;
-    margin: 1em;
+    margin: 2em;
 }
 
-/*Flexbox al contenedor galeria*/
-
-#galeria {
+.imagenes{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1465,9 +1607,23 @@ footer {
     margin-bottom: 8em;
 }
 
-/*Grids a la galeria*/
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px 0px;
+    transition: all 300ms ease;
+}
 
-#galeria {
+.img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*Galeria Grids (Solo la galeria de imagenes)*/
+
+.imagenes {
     display: grid;
     grid-template-columns: repeat(4, 400px);
     grid-template-rows: repeat(5, 300px);
@@ -1536,27 +1692,11 @@ footer {
     grid-area: img14;
 }
 
-/*Estilo de todas las imagenes*/
-
-.img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 3px 5px 10px 0px;
-    transition: all 300ms ease;
-}
-
-.img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
 /*Galeria Media Queries*/
 
 @media screen and (min-width: 320px) and (max-width:479px) {
 
-    #galeria {
+    .imagenes {
         display: grid;
         grid-template-columns: repeat(2, 140px);
         grid-template-rows: repeat(9, 140px);
@@ -1603,7 +1743,7 @@ footer {
         left: 100%;
         background:rgb(124, 89, 89) ;
         width: 100%;
-        height: 25vh;
+        height: 20vh;
         right: 0;
     }
 
@@ -1614,9 +1754,9 @@ footer {
         margin: 0;
     }
 
-    .navMenu ul li:last-child{
+    .navMenu ul li:nth-last-child(n + 1){
         background: none;
-        padding: 1rem;
+        padding: 1.1em;
     }
 
     #check:checked ~ ul{
@@ -1626,6 +1766,10 @@ footer {
 
     .galeriaTitulo h1 {
         font-size: 1.5em;
+    }
+
+    .img:hover{
+        transform: none;
     }
 
     .pieDePagina .redes {
@@ -1654,7 +1798,7 @@ footer {
 
 @media screen and (min-width: 480px) and (max-width:767px) {
 
-    #galeria {
+    .imagenes {
         display: grid;
         grid-template-columns: repeat(2, 200px);
         grid-template-rows: repeat(9, 200px);
@@ -1701,7 +1845,7 @@ footer {
         left: 100%;
         background:rgb(124, 89, 89) ;
         width: 100%;
-        height: 25vh;
+        height: 20vh;
         right: 0;
     }
 
@@ -1712,9 +1856,9 @@ footer {
         margin: 0;
     }
 
-    .navMenu ul li:last-child{
+    .navMenu ul li:nth-last-child(n + 1){
         background: none;
-        padding: 1rem;
+        padding: 1.1em;
     }
 
     #check:checked ~ ul{
@@ -1722,8 +1866,12 @@ footer {
         transition: all .25s;
     }
 
-    .galeriaTitulo h1 {
-        font-size: 2em;
+    .galeriaTitulo, h1 {
+        font-size: 0.6em;
+    }
+
+    .img:hover{
+        transform: none;
     }
 
     .pieDePagina .redes {
@@ -1752,7 +1900,7 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width:1279px) {
 
-    #galeria {
+    .imagenes {
         display: grid;
         grid-template-columns: repeat(3, 220px);
         grid-template-rows: repeat(9, 400px);
@@ -1771,11 +1919,15 @@ footer {
     .galeriaTitulo h1 {
         font-size: 3em;
     }
+
+    .pieDePagina picture {
+        display: none
+    }
 }
 
 @media screen and (min-width: 1280px) and (max-width:1824px) {
 
-    #galeria {
+    .imagenes {
         display: grid;
         grid-template-columns: repeat(4, 300px);
         grid-template-rows: repeat(5, 300px);
@@ -1792,16 +1944,12 @@ footer {
 
 /*CONTACTO*/
 
-/*Posicionamiento al titulo*/
-
 .contactoTitulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-/*Estilo al titulo*/
 
 .contactoTitulo h1 {
     font-size: 4em;
@@ -1815,7 +1963,6 @@ footer {
 /*FORMULARIO CONTACTO*/
 
 .contenedorContacto {
-    /*Posicionamiento al formulario*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -1826,27 +1973,19 @@ footer {
     margin-bottom: 8em;
 }
 
-/*Estilo a los cajones del formulario*/
-
 .contenedorContacto form {
     width: 500px;
-    /*Lo pase a pixeles porque en em se distribuye de otra manera la caja padre*/
     padding: 1em;
-
     border-radius: 0.5em;
     box-shadow: 6px 3px 8px 1px #000000;
     background: linear-gradient(135deg, #e9eced 0%, #fffcfc 100%);
 }
-
-/*Estilo a todo el texto del formulario*/
 
 .contenedorContacto form {
     font-size: 1.2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #000000;
 }
-
-/*Posicionamiento entre los divs*/
 
 .contenedorContacto div {
     display: flex;
@@ -1858,14 +1997,10 @@ footer {
     margin-bottom: 0.5em;
 }
 
-/*Alto y ancho de las cajas de texto*/
-
 .contenedorContacto input {
     width: 450px;
     height: 40px;
 }
-
-/*Se modificaron los valores de las cajas de texto */
 
 .contenedorContacto input {
     font-size: 1.0em;
@@ -1874,14 +2009,10 @@ footer {
     border: 1px solid;
 }
 
-/*Alto y ancho de la caja de comentario*/
-
 .contenedorContacto textarea {
     width: 450px;
     height: 90px;
 }
-
-/*Se modificaron los valores de la caja comentario*/
 
 .contenedorContacto textarea {
     font-size: 1.2em;
@@ -1890,8 +2021,6 @@ footer {
     outline: none;
     border: 1px solid;
 }
-
-/*Estilos al boton*/
 
 .contenedorContacto button {
     font-size: 0.8em;
@@ -1903,16 +2032,13 @@ footer {
     width: 450px;
     margin: 10px;
     padding: 15px 45px;
-
     text-align: center;
     text-transform: uppercase;
-
     color: #ffffff;
     box-shadow: 0 0 20px #eeeeee;
     border-radius: 10px;
     background-size: 200% auto;
     background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8 51%, #757F9A 100%);
-
     transition: 0.5s;
 }
 
@@ -1921,6 +2047,8 @@ footer {
     color: #ffffff;
     text-decoration: none;
 }
+
+/*Contacto Grids*/
 
 #contacto {
     display: grid;
@@ -1944,7 +2072,7 @@ footer {
     grid-area: footer;
 }
 
-/*CONTACTO MEDIA QUERIES*/
+/*Contacto Media Queries*/
 
 @media screen and (min-width:320px) and (max-width:479px) {
 
@@ -1989,7 +2117,7 @@ footer {
         left: 100%;
         background:rgb(124, 89, 89) ;
         width: 100%;
-        height: 25vh;
+        height: 20vh;
         right: 0;
     }
 
@@ -2000,9 +2128,9 @@ footer {
         margin: 0;
     }
 
-    .navMenu ul li:last-child{
+    .navMenu ul li:nth-last-child(n + 1){
         background: none;
-        padding: 1rem;
+        padding: 1.1em;
     }
 
     #check:checked ~ ul{
@@ -2010,8 +2138,12 @@ footer {
         transition: all .25s;
     }
 
-    .contactoTitulo h1 {
-        font-size: 2em;
+    .contactoTitulo, h1 {
+        font-size: 0.4em;
+    }
+
+    .contenedorContaco, label{
+        font-size: 0.7em;
     }
 
     .contenedorContacto form {
@@ -2027,38 +2159,12 @@ footer {
     }
 
     .contenedorContacto button {
+        font-size: 0.7em;
         width: 90%;
-    }
-
-    .pieDePagina .redes {
-        display: flex;
-        flex-direction: row;
-        font-size: 0.8em;
     }
 
     .pieDePagina picture {
         display: none
-    }
-
-    .links,
-    .informacion {
-        display: none;
-    }
-
-    .redes h4 {
-        display: none;
-    }
-
-    .redes a {
-        margin-right: 1.1em;
-    }
-
-    .copyright h5 {
-        font-size: 0.8em;
-    }
-
-    .copyright p {
-        font-size: 0.6em;
     }
 }
 
@@ -2093,7 +2199,7 @@ footer {
         left: 100%;
         background:rgb(124, 89, 89) ;
         width: 100%;
-        height: 25vh;
+        height: 20vh;
         right: 0;
     }
 
@@ -2104,9 +2210,9 @@ footer {
         margin: 0;
     }
 
-    .navMenu ul li:last-child{
+    .navMenu ul li:nth-last-child(n + 1){
         background: none;
-        padding: 1rem;
+        padding: 1.1em;
     }
 
     #check:checked ~ ul{
@@ -2114,8 +2220,8 @@ footer {
         transition: all .25s;
     }
 
-    .contactoTitulo h1 {
-        font-size: 3em;
+    .contactoTitulo, h1 {
+        font-size: 0.6em;
     }
 
     .contenedorContacto form {
@@ -2187,6 +2293,46 @@ footer {
             "footer footer footer";
     }
 
+    .checkBoton{
+        display: block;
+    }
+
+    .menuIcon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor:pointer;
+    }
+
+    .navMenu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+        background:rgb(124, 89, 89) ;
+        width: 100%;
+        height: 20vh;
+        right: 0;
+    }
+
+    .navMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .navMenu ul li:nth-last-child(n + 1){
+        background: none;
+        padding: 1.1em;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+
     .contactoTitulo h1 {
         font-size: 3em;
     }
@@ -2246,4 +2392,90 @@ footer {
     .copyright p {
         font-size: 0.6em;
     }
+}
+
+/*----------------------------------------------------*/
+
+/*FOOTER*/
+
+footer {
+    background-color: #7D6E83;
+}
+
+.pieDePagina {    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.logoFooter {
+    width: 8em;
+}
+
+/*LINKS*/
+
+.links h4 {
+
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;;
+    margin-bottom: 0.5em;
+}
+
+.links ul li a {
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    color: #000000;
+}
+
+.links li {
+    margin-bottom: 1em;
+}
+
+/*REDES*/
+
+.redes {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes h4 {
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0.5em;
+    color: #000000;
+}
+
+.redes a {
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    margin-bottom: 1em;
+}
+
+/*INFORMACION*/
+
+.informacion h4 {
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0.5em;
+    color: #000000;
+}
+
+.informacion ul li {
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+}
+
+.informacion li {
+    margin-bottom: 1em;
+}
+
+/*COPYRIGHT*/
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
